@@ -1,0 +1,20 @@
+{
+	"cost": 0,
+	"description": "\u003cp\u003eA potion of this type allows the one who drinks it to control the actions of creatures of a certain type.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eConcentration:\u003c/strong\u003e Exercising control requires concentration.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eVisual range:\u003c/strong\u003e The character can only control creatures that they can see.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSuicidal commands:\u003c/strong\u003e Controlled creatures will resist commands that are deadly to themselves.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cspan id=\"Control_Plant\" class=\"mw-headline\"\u003eControl Plant\u003c/span\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eAffects:\u003c/strong\u003e All plants (including plant monsters) in a 30′ square area up to 60′ distant.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eCommands:\u003c/strong\u003e Affected plants may be commanded to move around as the character wishes, and may be used to entangle creatures in the area.\u003c/li\u003e\n\u003c/ul\u003e",
+	"name": "Potion of Control Plant",
+	"quantity": {
+		"max": 0,
+		"value": 1
+	},
+	"treasure": false,
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "37bEYxLj8w7UN3Vp",
+		"Img": "modules/ose-content/assets/weapons/PotionIconsAdd_20_b.PNG",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "item"
+	},
+	"weight": 5
+}

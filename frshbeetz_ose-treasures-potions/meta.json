@@ -1,0 +1,10 @@
+{
+	"name": "Potions - OSE",
+	"slug": "ose-treasures-potions",
+	"author": "frshbeetz",
+	"description": "OSE Potions",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-treasures-potions"
+	],
+	"images": {}
+}
