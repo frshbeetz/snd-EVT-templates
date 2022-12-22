@@ -1,0 +1,10 @@
+{
+	"name": "OSE Rings",
+	"slug": "ose-treasure-rings",
+	"author": "frshbeetz",
+	"description": "OSE Rings",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-treasures-rings"
+	],
+	"images": {}
+}

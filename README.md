@@ -9,7 +9,7 @@
 * **Random Character - OSE**
 
 Prints an 80mm wide character info sheet for OSE, with an included profession from a list of medieval professions.
-It may have bugs (like generating 0 or negative HP characters). 
+*It may have bugs (like generating 0 or negative HP characters).*
 
 * **Adventuring Gear - OSE**
 
@@ -33,6 +33,7 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 * **Monsters - OSE**
 * **Potions - OSE**
 * **Misc Treasures - OSE**
+* **Rings - OSE**
 
 # Templates
 
@@ -42,3 +43,4 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 * **Monsters - OSE**
 * **Potions - OSE**
 * **Misc Treasures - OSE**
+* **Rings - OSE**

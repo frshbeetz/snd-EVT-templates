@@ -1,0 +1,20 @@
+{
+	"cost": 0,
+	"description": "\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eUsage:\u003c/strong\u003e A charm may be placed upon a human within 60′. One target may be charmed per round.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eResisting:\u003c/strong\u003e The subject may \u003cstrong\u003esave versus spells (with a \u0026ndash;2 penalty)\u003c/strong\u003e to resist.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMaximum subjects:\u003c/strong\u003e Up to 6 Hit Dice of humans may be charmed in this way. Normal humans count as \u0026frac12; HD.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eCharmed individuals:\u003c/strong\u003e Regard the character as a trusted friend, and will come to their defence. They will obey the character\u0026rsquo;s commands, as long as these are not obviously harmful and do not contradict the subject\u0026rsquo;s alignment.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDuration:\u003c/strong\u003e The charm lasts until dispelled, until the ring is removed, or until the wearer cancels it.\u003c/li\u003e\n\u003c/ul\u003e",
+	"name": "Ring of Control Humans",
+	"quantity": {
+		"max": 0,
+		"value": 1
+	},
+	"treasure": false,
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "0zEk8suZA1vpNX4o",
+		"Img": "icons/equipment/finger/ring-band-engraved-scrolls-gold.webp",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "item"
+	},
+	"weight": 0
+}
