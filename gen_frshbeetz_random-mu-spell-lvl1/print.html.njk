@@ -1,0 +1,186 @@
+<style>
+    * {font-family:sans-serif;}
+    hr {border-top: 5px solid black;}
+</style>
+
+<body>
+    <center><span>⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋</span></center>
+    <br>
+    <br>
+    <div id="heading">
+        <center><h1><span id="name" style="font-size:200%"></span></h1></center>
+        <center><h2><span id="name2" style="font-size:200%"></span></h2></center>
+
+    </div>
+    <hr>
+    <div id ="duration_range" style="font-size:150%">
+        <b>Duration:</b> <span id="duration"></span><span>
+        <br>
+        <b>Range:</b> <span id="range"></span><span>
+    </div>
+
+    <span id="description" style="font-size:150%"></span>
+    <span id="description2" style="font-size:150%"></span>
+    <br>
+	<center>
+        <span style="font-size:150%"><b>Level: </b></span><span id="lvl" style="font-size:150%"></span><span style="font-size:150%"> · </span>
+        <span style="font-size:150%"><b>Class: </b></span><span id="class" style="font-size:150%"></span><span style="font-size:150%"> · </span>
+        <span style="font-size:150%"><b>Save: </b></span><span id="save" style="font-size:150%"></span><span style="font-size:150%"></span>
+
+     </center>
+    <br>
+    <center><span>&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</span></center>
+    <br>
+    <br>
+    <br>
+</body>
+
+<script>
+    var spells = [
+        {
+            "name": "Floating Disc",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "6 turns",
+                "range": "6'",
+                "description": "<p>The caster conjures a slightly concave, circular disc of magical force that follows them about and carries loads.</p>\n<ul>\n<li><strong>Dimensions:</strong> The disc is 3 feet in diameter and 1 inch deep at its centre.</li>\n<li><strong>Load:</strong> It can hold a maximum load of 5,000 coins (500 pounds).</li>\n<li><strong>Motion:</strong> The disc floats at waist height and remains level, floating along horizontally within spell range.</li>\n<li><strong>End:</strong> When the disc winks out at the end of the spell’s duration, anything it was supporting is dropped.</li>\n</ul>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Light",
+            "name2": "Darkness",
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "6 turns + 1 per level",
+                "range": "120'",
+                "description": "<p>This spell has three usages:</p>\n<ol>\n<li><strong>Conjuring light:</strong> In a 15' radius. The magical light is sufficient for reading, but is not as bright as daylight. The spell may be cast upon an object, in which case the light moves with the object.</li>\n<li><strong>Blinding a creature:</strong> By casting the spell upon its eyes. If the target fails a <strong>saving throw versus spells</strong>, it is blinded for the duration. A blind creature cannot attack.</li>\n<li><strong>Cancelling darkness: </strong><em>Light </em>may cancel a <em>darkness </em>spell (see below).</li>\n</ol>\n<h2>Reversed</h2>\n<p>See<strong> Darkness</strong>.</p>",
+                "description2": "<p>Creates a 15' radius area of magical blackness, preventing both normal sight and infravision. Light sources brought within the area of darkness do not illuminate it. Like <em>light</em>, it may alternatively be used to blind creatures or to dispel a <em>light</em>spell.</p>\n<hr />\n<p>This is the reversal of&nbsp;<strong>Light</strong>.</p>",
+                "save": "spell"
+        },
+        {
+            "name": "Read Magic",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "1 turn",
+                "range": "The caster",
+                "description": "<p>By means of <em>read magic</em>, the caster can decipher magical inscriptions or runes, as follows:</p>\n<ul>\n<li><strong>Scrolls:</strong> The magical script of a scroll of arcane spells can be understood.The caster is then able to activate the scroll at any time in the future.</li>\n<li><strong>Spell books:</strong> A spell book written by another arcane spell caster can be deciphered.</li>\n<li><strong>Inscriptions:</strong> Runes or magical words inscribed on an object or surface can be understood.</li>\n<li><strong>Reading again:</strong> Once the caster has read a magical inscription using <em>read magic,</em> is thereafter able to read that particular writing without recourse to the use of this spell.</li>\n</ul>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Shield",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "2 turns",
+                "range": "Self",
+                "description": "<p><em>Shield</em> creates an invisible field of force that protects the caster:</p>\n<ul>\n<li><strong>Against missile attacks: </strong>The caster&rsquo;s AC is 2 [17].</li>\n<li><strong>Against other attacks:</strong> The caster&rsquo;s AC is 4 [15].</li>\n</ul>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Hold Portal",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "2d6 turns",
+                "range": "10'",
+                "description": "<p>This spell magically holds shut a door, gate, window, or other kind of portal.</p>\n<ul>\n<li><strong>Opening by magic:&nbsp;</strong> A knock spell opens the held portal instantly.</li>\n<li><strong>Opening by force:&nbsp;</strong> Creatures with at least 3 Hit Dice more than the caster can open the held portal with one round of effort.</li>\n</ul>\n<p>&nbsp;</p>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Charm Person",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "1+ days (see below)",
+                "range": "120'",
+                "description": "<p>A single, humanoid creature must save versus spells or be charmed, as follows:</p>\n<ul>\n<li><strong>Friendship:</strong> The subject regards the caster as its trusted friend and ally and will come to the caster&rsquo;s defence.</li>\n<li><strong>Commands:</strong> If they share a language, the caster may give the charmed creature commands, which it will obey.</li>\n<li><strong>Subject&rsquo;s nature:</strong> Commands that contradict the charmed creature&rsquo;s habits or alignment may be ignored.</li>\n<li><strong>Suicidal commands:</strong> An affected creature never obeys suicidal or obviously harmful orders.</li>\n</ul>\n<p><strong>Restrictions:</strong> Humanoids of greater than 4+1 HD and undead are not affected.</p>\n<p><strong>Duration: </strong>The charm lasts indefinitely, but the subject is allowed to make further <strong>saves versus spells</strong> at intervals, depending on its INT score. If one of these saves succeeds, the spell ends.</p>\n<ul>\n<li><strong>INT 3&ndash;8:</strong> The creature gains a new save once every month.</li>\n<li><strong>INT 9&ndash;12:</strong> The creature gains a new save each week.</li>\n<li><strong>INT 13&ndash;18:</strong> The creature gains a new save once every day.</li>\n</ul>",
+                "description2":null,
+                "save": "spell"
+        },
+        {
+            "name": "Magic Missile",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "1 turn",
+                "range": "150'",
+                "description": "<p>This spell conjures a glowing dart of energy that the caster may choose to shoot at a visible target within range.</p>\n<p><strong>Hit:</strong> The missile hits unerringly (no attack roll or saving throw is required).</p>\n<p><strong>Damage:</strong> The missile inflicts 1d6+1 damage.</p>\n<p><strong>Higher level casters:</strong> May conjure more missiles: two additional missiles are conjured per five experience levels the caster has gained (i.e. three missiles at 6th–10th level, five missiles at 11th–15th level, etc.). Multiple missiles may be directed at a single target.</p>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Read Languages",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "2 turns",
+                "range": "The caster",
+                "description": "<p>For the duration of this spell, the caster may read any language, coded message, map, or other set of written instructions.</p>\n<p>This spell does not grant any ability to <em>speak</em> unknown languages.</p>\n<p>&nbsp;</p>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Ventriloquism",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "2 turns",
+                "range": "60'",
+                "description": "<p>The caster may make their voice appear to come from any location or source (e.g. a statue or animal) within range.</p>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Detect Magic",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "2 turns",
+                "range": "60'",
+                "description": "<p>Enchanted objects, areas, or creatures are caused to glow. Both permanent and temporary enchantments are revealed.</p>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Protection from Evil",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "6 turns",
+                "range": "The caster",
+                "description": "<p>This spell wards the caster from attacks by creatures of another alignment, as follows:</p>\n<ul>\n<li><strong>Bonuses:</strong> The caster gains a +1 bonus to saving throws against attacks or special abilities of affected creatures.</li>\n<li><strong>Affected creatures’ attacks: </strong>Against the caster are penalised by –1.</li>\n<li><strong>Enchanted, constructed, or summoned creatures:</strong> The spell additionally prevents such creatures from attacking the caster in melee, though they may still make ranged attacks. If the caster engages such a creature in melee, this protection is broken (the caster still gains the save and attack bonuses mentioned above).</li>\n</ul>\n<p>&nbsp;</p>",
+                "description2":null,
+                "save": "n/a"
+        },
+        {
+            "name": "Sleep",
+            "name2":null,
+                "lvl": 1,
+                "class": "Magic-User",
+                "duration": "4d4 turns",
+                "range": "240'",
+                "description": "<p>A <em>sleep </em>spell causes a magical slumber to come upon creatures, excluding the undead.The spell may target either:</p>\n<ol>\n<li>A single creature with 4+1 Hit Dice.</li>\n<li>A total of [[/roll 2d8 #Sleep]] Hit Dice of creatures of 4 HD or lower each.</li>\n</ol>\n<p>When targeting creatures of 4 HD or less, the following rules apply:</p>\n<ul>\n<li><strong>Weakest first:</strong> Targets with the least HD are affected first.</li>\n<li><strong>HD:</strong> Calculate monsters with less than 1 HD as having 1 HD and monsters with a bonus to HD as having the flat amount.<br>(For example, a 3+2 HD monster would be calculated as having 3 HD.)</li>\n<li><strong>Excess:</strong> Rolled Hit Dice that are not sufficient to affect a creature are wasted.</li>\n</ul>\n<p><strong>Killing: </strong>Creatures enchanted by this spell are helpless and can be killed instantly with a bladed weapon.</p>\n<p><strong>Awakening:</strong> Slapping or wounding awakens an affected creature.</p>",
+                "description2":null,
+                "save": "n/a"
+        }
+    ];
+
+    var spell = spells[Math.floor(random() * spells.length)];
+    document.getElementById("name").textContent = spell.name;
+    document.getElementById("description").innerHTML = spell.description;
+    document.getElementById("name2").textContent = spell.name2;
+    document.getElementById("description2").innerHTML = spell.description2;
+    document.getElementById("lvl").textContent = spell.lvl;
+    document.getElementById("class").textContent = spell.class;
+    document.getElementById("duration").textContent = spell.duration;
+    document.getElementById("range").textContent = spell.range;
+    document.getElementById("save").textContent = spell.save;
+</script>
+
+</script>

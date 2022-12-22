@@ -1,0 +1,11 @@
+{
+	"name": "Random 1st Level Spell (MU)",
+	"slug": "random-mu-spell-lvl1",
+	"author": "frshbeetz",
+	"description": "Random first level spell for Magic-Users.",
+	"passEntriesToJS": false,
+	"config": [],
+	"images": {},
+	"dataSources": [],
+	"version": ""
+}
