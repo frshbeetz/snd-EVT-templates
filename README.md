@@ -31,10 +31,12 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 
 * **Adventuring Gear - OSE**
 * **Monsters - OSE**
+* **Weapons - OSE**
 * **Spells - OSE**
 * **Potions - OSE**
 * **Misc Treasures - OSE**
 * **Rings - OSE**
+* **Rods/Wands/Staves - OSE**
 
 # Templates
 
@@ -42,7 +44,9 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 
 * **Adventuring Gear - OSE**
 * **Monsters - OSE**
+* **Weapons - OSE**
 * **Spells - OSE**
 * **Potions - OSE**
 * **Misc Treasures - OSE**
 * **Rings - OSE**
+* **Rods/Wands/Staves - OSE**
