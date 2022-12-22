@@ -1,0 +1,724 @@
+[
+	{
+		"id": "ENT-478919-457873",
+		"name": "Ghoul2",
+		"data": {
+			"aac": {
+				"mod": 0,
+				"value": 14
+			},
+			"ac": {
+				"mod": 0,
+				"value": 5
+			},
+			"actor": {
+				"_id": "P3y6Hl9Ssaws3Cx3",
+				"data": {
+					"aac": {
+						"mod": 0,
+						"value": 0
+					},
+					"ac": {
+						"mod": 0,
+						"value": 8
+					},
+					"actor": {
+						"_id": "P3y6Hl9Ssaws3Cx3",
+						"data": {
+							"aac": {
+								"mod": 0,
+								"value": 0
+							},
+							"ac": {
+								"mod": 0,
+								"value": 8
+							},
+							"actor": {
+								"_id": "P3y6Hl9Ssaws3Cx3",
+								"data": {
+									"aac": {
+										"mod": 0,
+										"value": 0
+									},
+									"ac": {
+										"mod": 0,
+										"value": 8
+									},
+									"attacks": "",
+									"details": {
+										"alignment": "Neutral",
+										"appearing": {
+											"d": "0",
+											"w": "1d6"
+										},
+										"biography": "\u003cp\u003eBirds of prey that drift on high currents of air and hunt prey on the ground.\u003c/p\u003e\n\u003cp\u003eSmall birds of prey. Will only attack humans if they appear defenceless.\u003c/p\u003e",
+										"morale": "7",
+										"treasure": {
+											"table": "",
+											"type": ""
+										},
+										"xp": "5"
+									},
+									"hp": {
+										"hd": "1d8 / 2",
+										"max": 2,
+										"value": 2
+									},
+									"initiative": {
+										"mod": 0,
+										"value": 0
+									},
+									"isSlow": false,
+									"movement": {
+										"base": 480,
+										"encounter": 160,
+										"value": "Flying"
+									},
+									"retainer": {
+										"enabled": false,
+										"loyalty": 0,
+										"wage": ""
+									},
+									"saves": {
+										"breath": {
+											"value": 17
+										},
+										"death": {
+											"value": 14
+										},
+										"paralysis": {
+											"value": 16
+										},
+										"spell": {
+											"value": "18"
+										},
+										"wand": {
+											"value": 15
+										}
+									},
+									"spells": {
+										"1": {
+											"max": 0
+										},
+										"2": {
+											"max": 0
+										},
+										"3": {
+											"max": 0
+										},
+										"4": {
+											"max": 0
+										},
+										"5": {
+											"max": 0
+										},
+										"6": {
+											"max": 0
+										},
+										"enabled": false
+									},
+									"thac0": {
+										"bba": 0,
+										"mod": {
+											"melee": 0,
+											"missile": 0
+										},
+										"value": 19
+									}
+								},
+								"flags": {},
+								"folder": "LzEtoPbwdFjigMBf",
+								"img": "icons/svg/mystery-man.svg",
+								"items": [
+									{
+										"_id": "fduftANM3Gv17AU6",
+										"data": {
+											"blindroll": false,
+											"description": "\u003cp\u003eCan be trained as guards or hunting animals.\u003c/p\u003e",
+											"pattern": "white",
+											"requirements": "",
+											"roll": "",
+											"rollTarget": 0,
+											"rollType": "result",
+											"save": ""
+										},
+										"flags": {},
+										"img": "systems/ose/assets/default/ability.png",
+										"name": "Trainable",
+										"sort": 100000,
+										"type": "ability"
+									},
+									{
+										"_id": "dZvpkl3wVQGRTF4e",
+										"data": {
+											"blindroll": false,
+											"description": "\u003cp\u003eCan dive onto victims visible from above. If the victim is surprised, the attack inflicts double damage. On an attack roll of 18 or more, the victim can be carried away (if of appropriate size).\u003c/p\u003e",
+											"pattern": "white",
+											"requirements": "",
+											"roll": "",
+											"rollTarget": 0,
+											"rollType": "result",
+											"save": ""
+										},
+										"flags": {},
+										"img": "systems/ose/assets/default/ability.png",
+										"name": "Swoop",
+										"sort": 200000,
+										"type": "ability"
+									},
+									{
+										"_id": "9BmCLAlHm1kB1Mhd",
+										"data": {
+											"bonus": 0,
+											"cost": 0,
+											"counter": {
+												"max": 1,
+												"value": 1
+											},
+											"damage": "1d2",
+											"description": "",
+											"equipped": false,
+											"melee": true,
+											"missile": false,
+											"pattern": "green",
+											"range": {
+												"long": 0,
+												"medium": 0,
+												"short": 0
+											},
+											"save": "",
+											"slow": false,
+											"tags": [
+												{
+													"title": "Melee",
+													"value": "Melee"
+												}
+											],
+											"weight": 0
+										},
+										"flags": {},
+										"img": "systems/ose/assets/default/weapon.png",
+										"name": "Talons or Beak",
+										"sort": 400000,
+										"type": "weapon"
+									}
+								],
+								"name": "Hawk, Normal",
+								"permission": {
+									"cFfkuR0X6dGCfIRE": 3,
+									"default": 0
+								},
+								"sort": 7200000,
+								"token": {
+									"actorData": {},
+									"actorId": "P3y6Hl9Ssaws3Cx3",
+									"actorLink": false,
+									"bar1": {},
+									"bar2": {},
+									"brightLight": 0,
+									"brightSight": 0,
+									"dimLight": 0,
+									"dimSight": 0,
+									"displayBars": 0,
+									"displayName": 0,
+									"disposition": -1,
+									"flags": {},
+									"height": 1,
+									"img": "icons/svg/mystery-man.svg",
+									"lightAlpha": 1,
+									"lightAngle": 360,
+									"lockRotation": false,
+									"name": "Hawk, Giant",
+									"randomImg": false,
+									"rotation": 0,
+									"scale": 1,
+									"sightAngle": 360,
+									"tint": null,
+									"vision": false,
+									"width": 1
+								},
+								"type": "monster"
+							},
+							"attacks": "",
+							"details": {
+								"alignment": "Neutral",
+								"appearing": {
+									"d": "0",
+									"w": "1d6"
+								},
+								"biography": "\u003cp\u003eBirds of prey that drift on high currents of air and hunt prey on the ground.\u003c/p\u003e\n\u003cp\u003eSmall birds of prey. Will only attack humans if they appear defenceless.\u003c/p\u003e",
+								"morale": "7",
+								"treasure": {
+									"table": "",
+									"type": ""
+								},
+								"xp": "5"
+							},
+							"hp": {
+								"hd": "1d8 / 2",
+								"max": 4,
+								"value": 4
+							},
+							"initiative": {
+								"mod": 0,
+								"value": 0
+							},
+							"isSlow": false,
+							"movement": {
+								"base": 480,
+								"encounter": 160,
+								"value": "Flying"
+							},
+							"retainer": {
+								"enabled": false,
+								"loyalty": 0,
+								"wage": ""
+							},
+							"saves": {
+								"breath": {
+									"value": 17
+								},
+								"death": {
+									"value": 14
+								},
+								"paralysis": {
+									"value": 16
+								},
+								"spell": {
+									"value": "18"
+								},
+								"wand": {
+									"value": 15
+								}
+							},
+							"spells": {
+								"1": {
+									"max": 0
+								},
+								"2": {
+									"max": 0
+								},
+								"3": {
+									"max": 0
+								},
+								"4": {
+									"max": 0
+								},
+								"5": {
+									"max": 0
+								},
+								"6": {
+									"max": 0
+								},
+								"enabled": false
+							},
+							"thac0": {
+								"bba": 0,
+								"mod": {
+									"melee": 0,
+									"missile": 0
+								},
+								"value": 19
+							}
+						},
+						"flags": {},
+						"folder": "LzEtoPbwdFjigMBf",
+						"img": "icons/svg/mystery-man.svg",
+						"items": [
+							{
+								"_id": "fduftANM3Gv17AU6",
+								"data": {
+									"blindroll": false,
+									"description": "\u003cp\u003eCan be trained as guards or hunting animals.\u003c/p\u003e",
+									"pattern": "white",
+									"requirements": "",
+									"roll": "",
+									"rollTarget": 0,
+									"rollType": "result",
+									"save": ""
+								},
+								"flags": {},
+								"img": "systems/ose/assets/default/ability.png",
+								"name": "Trainable",
+								"sort": 100000,
+								"type": "ability"
+							},
+							{
+								"_id": "dZvpkl3wVQGRTF4e",
+								"data": {
+									"blindroll": false,
+									"description": "\u003cp\u003eCan dive onto victims visible from above. If the victim is surprised, the attack inflicts double damage. On an attack roll of 18 or more, the victim can be carried away (if of appropriate size).\u003c/p\u003e",
+									"pattern": "white",
+									"requirements": "",
+									"roll": "",
+									"rollTarget": 0,
+									"rollType": "result",
+									"save": ""
+								},
+								"flags": {},
+								"img": "systems/ose/assets/default/ability.png",
+								"name": "Swoop",
+								"sort": 200000,
+								"type": "ability"
+							},
+							{
+								"_id": "9BmCLAlHm1kB1Mhd",
+								"data": {
+									"bonus": 0,
+									"cost": 0,
+									"counter": {
+										"max": 1,
+										"value": 1
+									},
+									"damage": "1d2",
+									"description": "",
+									"equipped": false,
+									"melee": true,
+									"missile": false,
+									"pattern": "green",
+									"range": {
+										"long": 0,
+										"medium": 0,
+										"short": 0
+									},
+									"save": "",
+									"slow": false,
+									"tags": [
+										{
+											"title": "Melee",
+											"value": "Melee"
+										}
+									],
+									"weight": 0
+								},
+								"flags": {},
+								"img": "systems/ose/assets/default/weapon.png",
+								"name": "Talons or Beak",
+								"sort": 400000,
+								"type": "weapon"
+							}
+						],
+						"name": "Hawk, Normal",
+						"permission": {
+							"cFfkuR0X6dGCfIRE": 3,
+							"default": 0
+						},
+						"sort": 7200000,
+						"token": {
+							"actorData": {},
+							"actorId": "P3y6Hl9Ssaws3Cx3",
+							"actorLink": false,
+							"bar1": {},
+							"bar2": {},
+							"brightLight": 0,
+							"brightSight": 0,
+							"dimLight": 0,
+							"dimSight": 0,
+							"displayBars": 0,
+							"displayName": 0,
+							"disposition": -1,
+							"flags": {},
+							"height": 1,
+							"img": "icons/svg/mystery-man.svg",
+							"lightAlpha": 1,
+							"lightAngle": 360,
+							"lockRotation": false,
+							"name": "Hawk, Giant",
+							"randomImg": false,
+							"rotation": 0,
+							"scale": 1,
+							"sightAngle": 360,
+							"tint": null,
+							"vision": false,
+							"width": 1
+						},
+						"type": "monster"
+					},
+					"attacks": "",
+					"details": {
+						"alignment": "Neutral",
+						"appearing": {
+							"d": "0",
+							"w": "1d6"
+						},
+						"biography": "\u003cp\u003eBirds of prey that drift on high currents of air and hunt prey on the ground.\u003c/p\u003e\n\u003cp\u003eSmall birds of prey. Will only attack humans if they appear defenceless.\u003c/p\u003e",
+						"morale": "7",
+						"treasure": {
+							"table": "",
+							"type": ""
+						},
+						"xp": "5"
+					},
+					"hp": {
+						"hd": "1d8 / 2",
+						"max": 1,
+						"value": 1
+					},
+					"initiative": {
+						"mod": 0,
+						"value": 0
+					},
+					"isSlow": false,
+					"movement": {
+						"base": 480,
+						"encounter": 160,
+						"value": "Flying"
+					},
+					"retainer": {
+						"enabled": false,
+						"loyalty": 0,
+						"wage": ""
+					},
+					"saves": {
+						"breath": {
+							"value": 17
+						},
+						"death": {
+							"value": 14
+						},
+						"paralysis": {
+							"value": 16
+						},
+						"spell": {
+							"value": "18"
+						},
+						"wand": {
+							"value": 15
+						}
+					},
+					"spells": {
+						"1": {
+							"max": 0
+						},
+						"2": {
+							"max": 0
+						},
+						"3": {
+							"max": 0
+						},
+						"4": {
+							"max": 0
+						},
+						"5": {
+							"max": 0
+						},
+						"6": {
+							"max": 0
+						},
+						"enabled": false
+					},
+					"thac0": {
+						"bba": 0,
+						"mod": {
+							"melee": 0,
+							"missile": 0
+						},
+						"value": 19
+					}
+				},
+				"flags": {},
+				"folder": "LzEtoPbwdFjigMBf",
+				"img": "icons/svg/mystery-man.svg",
+				"items": [
+					{
+						"_id": "fduftANM3Gv17AU6",
+						"data": {
+							"blindroll": false,
+							"description": "\u003cp\u003eCan be trained as guards or hunting animals.\u003c/p\u003e",
+							"pattern": "white",
+							"requirements": "",
+							"roll": "",
+							"rollTarget": 0,
+							"rollType": "result",
+							"save": ""
+						},
+						"flags": {},
+						"img": "systems/ose/assets/default/ability.png",
+						"name": "Trainable",
+						"sort": 100000,
+						"type": "ability"
+					},
+					{
+						"_id": "dZvpkl3wVQGRTF4e",
+						"data": {
+							"blindroll": false,
+							"description": "\u003cp\u003eCan dive onto victims visible from above. If the victim is surprised, the attack inflicts double damage. On an attack roll of 18 or more, the victim can be carried away (if of appropriate size).\u003c/p\u003e",
+							"pattern": "white",
+							"requirements": "",
+							"roll": "",
+							"rollTarget": 0,
+							"rollType": "result",
+							"save": ""
+						},
+						"flags": {},
+						"img": "systems/ose/assets/default/ability.png",
+						"name": "Swoop",
+						"sort": 200000,
+						"type": "ability"
+					},
+					{
+						"_id": "9BmCLAlHm1kB1Mhd",
+						"data": {
+							"bonus": 0,
+							"cost": 0,
+							"counter": {
+								"max": 1,
+								"value": 1
+							},
+							"damage": "1d2",
+							"description": "",
+							"equipped": false,
+							"melee": true,
+							"missile": false,
+							"pattern": "green",
+							"range": {
+								"long": 0,
+								"medium": 0,
+								"short": 0
+							},
+							"save": "",
+							"slow": false,
+							"tags": [
+								{
+									"title": "Melee",
+									"value": "Melee"
+								}
+							],
+							"weight": 0
+						},
+						"flags": {},
+						"img": "systems/ose/assets/default/weapon.png",
+						"name": "Talons or Beak",
+						"sort": 400000,
+						"type": "weapon"
+					}
+				],
+				"name": "Hawk, Normal",
+				"permission": {
+					"cFfkuR0X6dGCfIRE": 3,
+					"default": 0
+				},
+				"sort": 7200000,
+				"token": {
+					"actorData": {},
+					"actorId": "P3y6Hl9Ssaws3Cx3",
+					"actorLink": false,
+					"bar1": {},
+					"bar2": {},
+					"brightLight": 0,
+					"brightSight": 0,
+					"dimLight": 0,
+					"dimSight": 0,
+					"displayBars": 0,
+					"displayName": 0,
+					"disposition": -1,
+					"flags": {},
+					"height": 1,
+					"img": "icons/svg/mystery-man.svg",
+					"lightAlpha": 1,
+					"lightAngle": 360,
+					"lockRotation": false,
+					"name": "Hawk, Giant",
+					"randomImg": false,
+					"rotation": 0,
+					"scale": 1,
+					"sightAngle": 360,
+					"tint": null,
+					"vision": false,
+					"width": 1
+				},
+				"type": "monster"
+			},
+			"attacks": "",
+			"details": {
+				"alignment": "Neutral",
+				"appearing": {
+					"d": "1d6",
+					"w": "1d6"
+				},
+				"biography": "Grotesque, animalistic, undead humans that crave the flesh of the living.\n\u003cbr\u003e\n\u003cbr\u003e\n\u003cul\u003e\n\u003cli\u003eArmour Class\t6 [13]\u003c/li\u003e\n\u003cli\u003eHit Dice\t2* (9hp)\u003c/li\u003e\n\u003cli\u003eAttacks\t2 × claw (1d3 + paralysis), 1 × bite (1d3 + paralysis)\u003c/li\u003e\n\u003cli\u003eTHAC0\t18 [+1]\u003c/li\u003e\n\u003cli\u003eMovement\t90’ (30’)\u003c/li\u003e\n\u003cli\u003eSaving Throws\tD12 W13 P14 B15 S16 (2)\u003c/li\u003e\n\u003cli\u003eMorale\t9\u003c/li\u003e\n\u003cli\u003eAlignment\tChaotic\u003c/li\u003e\n\u003cli\u003eXP\t25\u003c/li\u003e\n\u003cli\u003eNumber Appearing\t1d6 (2d8)\u003c/li\u003e\n\u003cli\u003eTreasure Type\tB\u003c/li\u003e\n\u003cbr\u003e\nParalysis: For 2d4 turns (save versus paralysis). Elves and creatures larger than ogres are unaffected. After paralysing a target, ghouls will attack others.\n\u003cbr\u003e\n\u003cbr\u003e\nUndead: Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).\nCategories: 2 HDSpecial AbilitiesMonstersAlignment ChaoticTreasure Type BUndead",
+				"morale": "9",
+				"treasure": {
+					"table": "@Compendium[ose-content.treasures.ImAT0ffGC7YF0Po7]{Treasure Type F}",
+					"type": ""
+				},
+				"xp": "950"
+			},
+			"hp": {
+				"hd": "6d8+1",
+				"max": 4,
+				"value": 4
+			},
+			"initiative": {
+				"mod": 0,
+				"value": 0
+			},
+			"movement": {
+				"base": 120,
+				"encounter": 30,
+				"value": ""
+			},
+			"name": "Ghoul",
+			"retainer": {
+				"enabled": false,
+				"loyalty": 0,
+				"wage": ""
+			},
+			"saves": {
+				"breath": {
+					"value": 15
+				},
+				"death": {
+					"value": 12
+				},
+				"paralysis": {
+					"value": 14
+				},
+				"spell": {
+					"value": "14"
+				},
+				"wand": {
+					"value": 13
+				}
+			},
+			"spells": {
+				"1": {
+					"max": 0
+				},
+				"2": {
+					"max": 0
+				},
+				"3": {
+					"max": 0
+				},
+				"4": {
+					"max": 0
+				},
+				"5": {
+					"max": 0
+				},
+				"6": {
+					"max": 0
+				},
+				"enabled": false
+			},
+			"thac0": {
+				"bba": 0,
+				"mod": {
+					"melee": 0,
+					"missile": 0
+				},
+				"value": 19
+			},
+			"vtt_meta": {
+				"Flags": {},
+				"ID": "0DUuP3L792gBLkFj",
+				"Img": "icons/svg/mystery-man.svg",
+				"Permission": {
+					"Default": 0
+				},
+				"Type": "monster"
+			}
+		}
+	}
+]

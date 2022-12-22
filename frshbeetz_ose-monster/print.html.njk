@@ -1,0 +1,129 @@
+
+<style>
+  * {font-family:sans-serif;}
+  h1, h2, h3, h4, h5, h6 {margin:0 0 0 0;}
+  hr {5px}
+</style>
+
+<br>
+<br>
+<br>
+<br>
+<div>
+<center><h1>{{it.name}}</h1></center>
+<br>
+
+<span style="font-size:150%"><h5>{{it.details.biography | safe}}</h5></span>
+
+<!--<br>
+<hr>
+<table style="width:100%">
+<tr>
+ <th><h1>AC</h1></th>
+ <th><h1>THAC0</h1></th>
+ <th><h1>HP</h1></th>
+</tr>
+<tr>
+
+  <td><h1>↓{{it.ac.value}} (↑{{it.aac.value}})</h1></td>
+  <td><h1>↓{{it.thac0.desc}} (↑{{it.thac0.asc}})</h1></td>
+  <td><h1>{{it.hit_dice.hp}}</h1></td>
+
+</tr>
+</table>  
+<table style="width:100%">
+<tr>
+  <th>HD</th>
+  <th>ML</th>
+  <th>AL</th>
+  <th>TT</th>
+  <th>XP</th>
+</tr>
+<tr>
+  <td>{{it.hit_dice.count}} {{it.hit_dice.special}}</td> 
+  <td>{{it.morale}}</td>
+  <td>{{it.alignment}}</td>
+  <td>{{it.treasure_type}}</td>   
+  <td>{{it.xp}}</td>
+</tr>
+</table>  
+<table style="width:100%">
+<tr>  
+
+  <th>MV</th>
+  <th>NA</th>
+</tr>
+<tr>
+
+  <td><i>↨</i>{{it.movement.base}}' ▦{{it.movement.encounter}}'</td>
+  <td>☈{{it.number_appearing.wandering}} ♜{{it.number_appearing.lair}}</td>
+
+  </tr>
+</table>
+<h2 style="margin-top:2px;">⛨ Saving Throws</h2>
+<hr>
+<b>Saves As:</b> {{ it.saving_throws.saves_as}}
+<table style="width:100%">
+<tr>
+  <th>D</th>
+  <th>W</th>
+  <th>P</th>
+  <th>B</th>
+  <th>S</th>
+</tr>
+<tr>
+  <td>{{it.saving_throws.death}}</td>
+  <td>{{it.saving_throws.wands}}</td>
+  <td>{{it.saving_throws.paralysis}}</td>
+  <td>{{it.saving_throws.breath}}</td>
+  <td>{{it.saving_throws.spells}}</td>
+</tr>
+</table>
+
+<h2 >⚔ Attacks</h2>
+<hr>
+<table style="width:100%">
+ <td></td>
+ <th> {{it.attacks[0].name}}</th>
+ <th> {{it.attacks[1].name}}</th>
+ <th> {{it.attacks[2].name}}</th>
+ <tr>
+   <th>ATK</th>
+   <td>{{it.attacks[0].number}}</td>
+   <td>{{it.attacks[1].number}}</td>
+   <td>{{it.attacks[2].number}}</td>
+ </tr>
+ <tr>
+   <th>DAM</th>
+   <td>{{it.attacks[0].damage}}</td>
+   <td>{{it.attacks[1].damage}}</td>
+   <td>{{it.attacks[2].damage}}</td>
+
+ </tr>
+ <tr>
+   <th>EFX</th>
+   <td>{{it.attacks[0].effect}}</td>
+   <td>{{it.attacks[1].effect}}</td>
+   <td>{{it.attacks[2].effect}}</td>
+</tr> 
+</table>
+
+<h2 style="margin-top:10px;">🗈 Notes</h2>
+<hr>
+
+<h4>{{ it.notes[0].attribute}}</h4> 
+<p style="text-indent:20px;">{{ it.notes[0].description}}</p>
+<h4>{{ it.notes[1].attribute}}</h4>
+<p style="text-indent:20px;">{{ it.notes[1].description}}</p>
+<h4>{{ it.notes[2].attribute}}</h4>
+<p style="text-indent:20px;">{{ it.notes[2].description}}</p>
+<h4>{{ it.notes[3].attribute}}</h4>
+<p style="text-indent:20px;">{{ it.notes[3].description}}</p>
+<h4>{{ it.notes[4].attribute}}</h4>
+<p style="text-indent:20px;">{{ it.notes[4].description}}</p>
+
+<br>
+</div>
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+-->

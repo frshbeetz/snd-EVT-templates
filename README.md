@@ -43,6 +43,7 @@ Data source from VTT for Monsters from the OSE SRD.
 
 "I'd like to purchase a 10ft Pole" - Template for printing specific adventuring gear.
 
+**Monsters - OSE**
 
-
+"You encounter a..." - Template for printing specific monsters from OSE.
 

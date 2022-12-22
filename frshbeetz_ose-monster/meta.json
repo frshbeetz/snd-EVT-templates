@@ -1,0 +1,10 @@
+{
+	"name": "OSE Monsters",
+	"slug": "ose-monster",
+	"author": "frshbeetz",
+	"description": "OSE Monsters from the SRD",
+	"dataSources": [
+		"ds:+ose-content-monsters"
+	],
+	"images": {}
+}
