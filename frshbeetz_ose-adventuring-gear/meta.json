@@ -1,7 +1,7 @@
 {
 	"name": "OSE Adventuring Gear",
 	"slug": "ose-adventuring-gear",
-	"author": "EVT",
+	"author": "frshbeetz",
 	"description": "OSE Adventuring Gear",
 	"dataSources": [
 		"ds:+ose-content-equipment-adventuring-gear"

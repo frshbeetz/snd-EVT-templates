@@ -6,6 +6,8 @@
 	"passEntriesToJS": false,
 	"config": [],
 	"images": {},
-	"dataSources": [],
+	"dataSources": [
+		"ds:+ose-content-equipment-adventuring-gear"
+	],
 	"version": ""
 }
