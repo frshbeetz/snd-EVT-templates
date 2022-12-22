@@ -15,6 +15,10 @@ It may have bugs (like generating 0 or negative HP characters).
 
 "I run his pockets" - Randomly prints a piece of adventuring gear.
 
+**Random 1st Level Spell (MU) - OSE**
+
+"I know magic missile!" - Radomly prints a 1st level Magic User spell.
+
 **Hex Grid**
 
 Prints a small Hex Grid. [WIP]
