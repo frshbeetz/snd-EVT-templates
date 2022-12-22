@@ -1,0 +1,641 @@
+<style>
+  * {font-family:sans-serif;}
+  td {text-align:center;}
+  th {background-color:black;color:white}
+  #misc_table td {text-align:left;}
+  td, th {height:20px;min-width:5px;}
+  /* div {margin-left: 10px; margin-right: 10px;} */
+  h1, h2, h3, h4, h5, h6 {margin:0 0 0 0;}
+  hr {border-top: 5px solid black;}
+  ul {list-style-type: none;list-style-position:inside;margin:0;padding:0;}
+</style>
+
+<body>
+    <center><span>⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋</span></center>
+    <br>
+    <br>
+  <!--Class Name-->
+    <div id="heading">
+      <center><h1><span id="class" style="font-size:200%"></span></h1></center>
+    </div>
+  	
+  <hr>
+  
+  <span id="description" style="font-size:150%"></span>
+    <br>
+    <br>
+  <div id="misc" style="font-size:150%">
+
+    <div id="misc_list" style="width:70%;float:left;display:block;">
+      <ul>
+        <li><b>Prime Requisite:</b> <span id="prime_req"></span>
+        <li><b>Profession:</b> <span id="job"></span>
+        <li><b>Gold Pieces:</b> <span id="startgold"></span>
+        <li><b>Weapons:</b> <span id="weapons"></span>
+        <li><b>Armor:</b> <span id="armor"></span>
+        <li><b>Languages:</b> <span id="languages"></span>
+          
+
+      </ul>
+    </div> 	
+    <div id="hp_table_div" style="width:30%;float:left;">	
+      <table id"hp_table">
+      <tr><th style="text-align:center;width:30%;height:40px;color:white;background:black;font-size:200%;">HP</th></tr>
+      <tr><td style="text-align:center;width:20%;height:40px;font-size:250%"><b><span id="hp"></span></b></td></tr>
+      <tr><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <br>
+	<div id="ability_div" style="clear:both;padding-top:25px;">
+  <h2>Ability Scores</h2>
+  <hr>
+  <table id="attribute_table" style="width:100%;font-size:200%;">
+    <tr>
+      <th>STR</th>
+      <th>INT</th>
+      <th>WIS</th>
+      <th>DEX</th>
+      <th>CON</th>
+      <th>CHA</th>
+    </tr>
+    <tr>
+      <td><span id="str"></span></td>
+      <td><span id="int"></span></td>
+      <td><span id="wis"></span></td>
+      <td><span id="dex"></span></td>
+      <td><span id="con"></span></td>
+      <td><span id="cha"></span></td>
+    </tr>
+    <tr>
+      <td><span id="strmod" style="font-size:75%;"></span></td>
+      <td><span id="intmod" style="font-size:75%;"></span></td>
+      <td><span id="wismod" style="font-size:75%;"></span></td>
+      <td><span id="dexmod" style="font-size:75%;"></span></td>
+      <td><span id="conmod" style="font-size:75%;"></span></td>
+      <td><span id="chamod" style="font-size:75%;"></span></td>
+    </tr>
+  </table>
+	</div> 
+  
+  <br>
+  <table id="acthac0hp_table" style="width:100%;font-size:240%;">
+    <tr>
+      <th>AC</th>
+      <th>MV</th>
+      <th>INIT</th>
+    </tr>
+    <tr>
+    	<td>↓<span id="descending_ac"></span> (↑<span id="ascending_ac"></span>)</td>
+		<td>⬣24 ♜120 ▦40</td>
+      	<td><span id="dexmod_2"></span></td>
+      
+    </tr>
+    </table>
+
+    <div id="saves_table">
+    <h2 style="margin-top:10px;">Saving Throws</h2>
+    <hr>
+    <table style="width:100%;font-size:150%;">
+    <tr style="height:40px;">
+      <th>D</th>
+      <th>W</th>
+      <th>P</th>
+      <th>B</th>
+      <th>S</th>
+    </tr>
+    <tr style="height:40px;">
+
+      <td><span id="D"></span></td>
+      <td><span id="W"></span></td>
+      <td><span id="P"></span></td>
+      <td><span id="B"></span></td>
+      <td><span id="S"></span></td>
+    </tr>
+    </table>
+  </div>
+
+  <h2 style="margin-top:10px;">Attack Value Matrix</h2>
+  <hr>
+  <table id="thac0_table" style="width:100%;font-size:150%;">
+    <tr><th>Attack Roll</th><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
+    <tr><th>AC Hit</th><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+  </table>
+  
+  <div id="exploration_table">
+   <h2 style="margin-top:10px;">Exploration</h2>
+   <hr>
+    <table style="width:100%;font-size:150%;">
+    <tr style="height:40px;">
+      <th>LD</th>
+      <th>OD</th>
+      <th>SD</th>
+      <th>FT</th>
+    </tr>
+    <tr>
+      <td><span id="ld"></span>-in-6</td>
+      <td><span id="od"></span>-in-6</td>
+      <td><span id="sd"></span>-in-6</td>
+      <td><span id="ft"></span>-in-6</td>
+    </tr>
+    </table>
+  </div>
+  
+  <!-- Notes/Misc
+    <h2 style="margin-top:10px;">🗈 Notes</h2>
+    <hr>
+    <h4>{{ it.notes[0].attribute}}</h4>
+    <p style="text-indent:20px;">{{ it.notes[0].description}}</p>
+    <h4>{{ it.notes[1].attribute}}</h4>
+    <p style="text-indent:20px;">{{ it.notes[1].description}}</p>
+    <h4>{{ it.notes[2].attribute}}</h4>
+    <p style="text-indent:20px;">{{ it.notes[2].description}}</p>
+    <h4>{{ it.notes[3].attribute}}</h4>
+    <p style="text-indent:20px;">{{ it.notes[3].description}}</p>
+    <h4>{{ it.notes[4].attribute}}</h4>
+    <p style="text-indent:20px;">{{ it.notes[4].description}}</p>
+  -->
+  
+  <br>
+  <div style="font-size:150%;"><center><b>Level:</b> 1 · <b>XP:</b> 0 · <b>XP to Next Level: </b><span id="xpnextlvl"></span></center></div>
+
+  <br>
+   <center><span>&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</span></center>
+  <br>
+  <br>
+  <br>
+</body>
+
+<script>
+  var finalclass;
+  var finalrequisite;
+  // OSE Attributes
+    var attributes = [
+          {
+            name: "STR",
+            value: 0,
+            doc_id: "str",
+            class: ["Fighter"]
+        },
+        {
+            name: "INT",
+            value: 0,
+            doc_id: "int",
+            class: ["Magic-User"]
+
+        },
+        {
+            name: "WIS",
+            value: 0,
+            doc_id: "wis",
+            class: ["Cleric"]
+
+        },
+        {
+            name: "DEX",
+            value: 0,
+            doc_id: "dex",
+            class: ["Thief"]
+
+        },
+        {
+            name: "CON",
+            value: 0,
+            doc_id: "con",
+            class: [null]
+        },
+        {
+            name: "CHA",
+            value: 0,
+            doc_id: "cha",
+            class: [null]
+        },
+    ];
+  // OSE Classses
+    var classes = [
+      {
+        "name":"Fighter",
+        "description":"Fighters are adventurers dedicated to mastering the arts of combat and war. In a group of adventurers, the role of fighters is to battle monsters and to defend other characters.",
+        "maxlvl":14,
+        "xpnextlvl":2000,
+        "hdcount":1,
+        "hdsides":8,
+        "armor":"Any, including shields",
+        "weapons":"Any",
+        "languages":"Alignment, Common",
+        "saving_throws": [
+          {"name":"D","value":12},
+          {"name":"W","value":13},
+          {"name":"P","value":14},
+          {"name":"B","value":15},
+          {"name":"S","value":16},     
+        ],
+        "ld":1,
+        "sd":1,
+        "ft":1
+      },
+      {
+        "name":"Cleric",
+        "description":"Clerics are adventurers who have sworn to serve a deity. They are trained for battle and channel the power of their deity.",
+        "maxlvl":14,
+        "xpnextlvl":1500,
+        "hdcount":1,
+        "hdsides":6,
+        "armor":"Any, including shields",
+        "weapons":"Any blunt weapons",
+        "languages":"Alignment, Common",
+        "saving_throws": [
+          {"name":"D","value":11},
+          {"name":"W","value":12},
+          {"name":"P","value":14},
+          {"name":"B","value":16},
+          {"name":"S","value":15},     
+        ],
+        "ld":1,
+        "sd":1,
+        "ft":1
+      },
+      {
+        "name":"Magic-User",
+        "description":"Magic-users are adventurers whose study of arcane secrets has taught them how to cast spells. Magic-users are able to cast a greater number of increasingly powerful spells as they advance in level.",    
+        "maxlvl":14,
+        "xpnextlvl":2500,
+        "hdcount":1,
+        "hdsides":4,
+        "armor":"None",
+        "weapons":"Dagger",
+        "languages":"Alignment, Common",
+        "saving_throws": [
+          {"name":"D","value":13},
+          {"name":"W","value":14},
+          {"name":"P","value":13},
+          {"name":"B","value":16},
+          {"name":"S","value":15},   
+        ],
+        "ld":1,
+        "sd":1,
+        "ft":1
+      },
+      {
+        "name":"Thief",
+        "description":"Thieves are adventurers who live by their skills of deception and stealth. Their range of unique skills makes them very handy companions in adventures. However, thieves are not always to be trusted.",
+        "maxlvl":14,
+        "xpnextlvl":1200,
+        "hdcount":1,
+        "hdsides":4,
+        "armor":"Leather, no shields",
+        "weapons":"Any",
+        "languages":"Alignment, Common",
+        "saving_throws": [
+          {"name":"D","value":13},
+          {"name":"W","value":14},
+          {"name":"P","value":13},
+          {"name":"B","value":16},
+          {"name":"S","value":15},  
+        ],
+        "ld":1,
+        "sd":1,
+        "ft":1
+      },
+      {
+        "name":"Dwarf",
+        "description":"Dwarves are stout, bearded demihumans, about 4’ tall and weighing about 150 pounds. Dwarves typically live underground and love fine craftsmanship, gold, hearty food, and strong drink. They have skin, hair, and eye colours in earth tones. Dwarves are known for their stubbornness and practicality. They are a hardy people and have a strong resistance to magic, as reflected in their saving throws.",
+        "maxlvl":12,
+        "xpnextlvl":2200,
+        "hdcount":1,
+        "hdsides":8,
+        "armor":"Any, including shields",
+        "weapons":"Small or normal sized",
+        "languages":"Alignment, Common, Dwarvish, Gnomish, Goblin, Kobold",
+        "saving_throws": [
+          {"name":"D","value":8},
+          {"name":"W","value":9},
+          {"name":"P","value":10},
+          {"name":"B","value":13},
+          {"name":"S","value":12},     
+        ],
+        "ld":2,
+        "sd":1,
+        "ft":2
+      },
+      {
+        "name":"Halfling",
+        "description":"Halflings are small, rotund demihumans with furry feet and curly hair. They weigh about 60 pounds and are around 3’ tall. Halflings are a friendly and welcoming folk. Above all, they love the comforts of home and are not known for their bravery. Halflings who gain treasure through adventuring will often use their wealth in pursuit of a quiet, comfortable life.",
+        "maxlvl":8,
+        "xpnextlvl":2000,
+        "hdcount":1,
+        "hdsides":6,
+        "armor":"Any appropriate to size, including shields",
+        "weapons":"Any appropriate to size",
+        "languages":"Alignment, Common, Halfling",
+        "saving_throws": [
+          {"name":"D","value":8},
+          {"name":"W","value":9},
+          {"name":"P","value":10},
+          {"name":"B","value":13},
+          {"name":"S","value":12},   
+        ],
+        "ld":2,
+        "sd":1,
+        "ft":1
+      },
+      {
+        "name":"Elf",
+        "description":"Elves are slender, fey demihumans with pointed ears. They typically weigh about 120 pounds and are between 5 and 5½ feet tall. Elves are seldom met in human settlements, preferring to feast and make merry in the woods. If crossed, they are dangerous enemies, as they are masters of both sword and spell. Elves are fascinated by spells and beautifully constructed magic items and love to collect both.",
+        "maxlvl":10,
+        "xpnextlvl":4000,
+        "hdcount":1,
+        "hdsides":6,
+        "armor":"Any, including shields",
+        "weapons":"Any",
+        "languages":"Alignment, Common, Elvish, Gnoll, Hobgoblin, Orcish",
+        "saving_throws": [
+          {"name":"D","value":12},
+          {"name":"W","value":13},
+          {"name":"P","value":13},
+          {"name":"B","value":15},
+          {"name":"S","value":15},     
+        ],
+        "ld":2,
+        "sd":2,
+        "ft":1
+      }
+    ];
+  // Medieval Jobs
+    var jobs=[{name:"Academic"},{name:"Actor"},{name:"Alchemist"},{name:"Animal Trainer"},{name:"Apothecary"},{name:"Aristocrat"},{name:"Armourer"},{name:"Artist"},{name:"Assassin"},{name:"Astrologer"},{name:"Atilliator"},{name:"Baker"},{name:"Barber"},{name:"Bartender"},{name:"Beekeeper"},{name:"Beggar"},{name:"Bellringer"},{name:"Besom Maker"},{name:"Blacksmith"},{name:"Bloodletter"},{name:"Bodger"},{name:"Bouncer"},{name:"Bowyer"},{name:"Brewer"},{name:"Bricklayer"},{name:"Busker"},{name:"Butcher"},{name:"Butler"},{name:"Candlestick Maker"},{name:"Caravan Guard"},{name:"Cartographer"},{name:"Chapman"},{name:"Cheesemonger"},{name:"Chimneyi Sweep"},{name:"Chirurgeon"},{name:"Clockmaker"},{name:"Clown"},{name:"Cobbler"},{name:"Colporteur"},{name:"Cook"},{name:"Cooper"},{name:"Courtesan"},{name:"Crystal"},{name:"Cultist"},{name:"Cupbearer"},{name:"Cutpurse"},{name:"Dentist"},{name:"Diplomat"},{name:"Ditch Digger"},{name:"Dog Breeder"},{name:"Drug Dealer"},{name:"Dung Collecter"},{name:"Dyer"},{name:"Engraver"},{name:"Faith Healer"},{name:"Falconer"},{name:"Farmer"},{name:"Farrier"},{name:"Fence"},{name:"Fireman"},{name:"Fisherman"},{name:"Flagellant"},{name:"Fletcher"},{name:"Forester"},{name:"Fortunei Teller"},{name:"Fowler"},{name:"Fuller"},{name:"Furrier"},{name:"Gambler"},{name:"Gardener"},{name:"Glassblower"},{name:"Gluemaker"},{name:"Gong Farmer"},{name:"Grave Robber"},{name:"Greengrocer"},{name:"Grifter"},{name:"Gutter Cleaner"},{name:"Gyspy"},{name:"Haberdasher"},{name:"Handyman"},{name:"Hawker"},{name:"Hayward"},{name:"Herbalist"},{name:"Hermit"},{name:"Hetheleder"},{name:"Horse"},{name:"Hunter"},{name:"Icecutter"},{name:"Incense Bearer"},{name:"Jester"},{name:"Jeweler"},{name:"Joiner"},{name:"Knacker"},{name:"Lamp Lighter"},{name:"Lawyer"},{name:"Leatherworker"},{name:"Librarian"},{name:"Lighterman"},{name:"Linkboy"},{name:"Locksmith"},{name:"Lookout"},{name:"Mason"},{name:"Mercenary"},{name:"Messenger"},{name:"Midwife"},{name:"Milkmaid"},{name:"Miller"},{name:"Milliner"},{name:"Miner"},{name:"Minstrel"},{name:"Moneylender"},{name:"Monk"},{name:"Mucker"},{name:"Night"},{name:"Nobleman's"},{name:"Occupation"},{name:"Organ Thief"},{name:"Orphan"},{name:"Ostler"},{name:"Outlaw"},{name:"Oyster Raker"},{name:"Painter"},{name:"Parchment Maker"},{name:"Pawnbroker"},{name:"Peat Cutter"},{name:"Philosopher"},{name:"Pickler"},{name:"Pie Maker"},{name:"Pimp"},{name:"Pirate"},{name:"Plague Doctor"},{name:"Postman"},{name:"Prison"},{name:"Prostitute"},{name:"Puppeteer"},{name:"Quill"},{name:"Rat Catcher"},{name:"Riverbank Comber"},{name:"Sailor"},{name:"Scholar"},{name:"Scribe"},{name:"Scrimshaw"},{name:"Scullion"},{name:"Seamstress"},{name:"Servant"},{name:"Sewerhand"},{name:"Shaman"},{name:"Shepherd"},{name:"Shingler"},{name:"Shipwright"},{name:"Shoe Shiner"},{name:"Shrubber"},{name:"Sinecure"},{name:"Slave"},{name:"Slaver"},{name:"Smuggler"},{name:"Soldier"},{name:"Spice Merchant"},{name:"Spy"},{name:"Squire"},{name:"Stevedore"},{name:"Stonecutter"},{name:"Street Sweeper"},{name:"Tailor"},{name:"Taxidermist"},{name:"Thatcher"},{name:"Thief"},{name:"Thug"},{name:"Tinker"},{name:"Torturer"},{name:"Trader"},{name:"Trapper"},{name:"Urchin"},{name:"Vaginarius"},{name:"Vagrant"},{name:"Veterinarian"},{name:"Village Idiot"},{name:"Vintner"},{name:"Wainwright"},{name:"Water Carrier"},{name:"Weaponsmith"},{name:"Weaver"},{name:"Window Tapper"},{name:"Woodcutter"},{name:"Zealot"}];
+    var job = jobs[Math.floor(Math.random() * jobs.length)];
+  // Gets Attribute Object Based on Name
+    function getAttrib(attribs, attrib){
+      for (let i=0; i<attribs.length; i++){
+        if (attribs[i].name == attrib)
+          {return attribs[i];}
+      }
+    } 
+  // Rolls a Die of X Sides
+   function rollDie(sides){
+      let roll = 1 + Math.floor(Math.random() * sides);
+      while (roll == 0){
+        roll = rollDie(sides);
+      }
+      return roll;
+    }
+  // Generates random attribute values
+    attributes.forEach(function(attrib, key){
+        let totalRoll = 0;
+        for (let rollNumber = 0; rollNumber < 3; rollNumber++) {
+            let diceRoll = rollDie(6);
+            totalRoll += diceRoll;
+        }
+        attributes[key].value = totalRoll;
+    });
+  // Gets Saving Throw Objects
+      function getSaves(saves, name){
+        for (let i=0; i<saves.length; i++){
+          if (saves[i].name == name)
+            {return saves[i];}
+        }
+    }
+  // Gets Final From Modifier
+    function getFinalFromModifier(modifier_val, base_val_asc, base_val_dsc){
+      switch(true) {
+        case (modifier_val <= 3):
+          return {asc: (base_val_asc - 3), dsc: (base_val_dsc + 3)};
+        case (modifier_val >= 4 && modifier_val <= 5 ):
+          return {asc: (base_val_asc - 2), dsc: (base_val_dsc + 2)};   
+        case (modifier_val >= 6 && modifier_val <= 8 ):
+          return {asc: (base_val_asc - 1), dsc: (base_val_dsc + 1)};
+        case (modifier_val >= 13 && modifier_val <= 15 ):
+          return {asc: (base_val_asc + 1), dsc: (base_val_dsc - 1)};
+        case (modifier_val >= 16 && modifier_val <= 17 ):
+          return {asc: (base_val_asc + 2), dsc: (base_val_dsc - 2)};
+        case (modifier_val == 18 ):
+          return {asc: (base_val_asc + 3), dsc: (base_val_dsc - 3)};
+        default:
+          return {dsc:base_val_dsc, asc:base_val_asc};	
+      }
+    }   
+  // Sets +1/2/3/-1/-2/-3 Base Modifiers
+    function getMod(attrib_val){
+      switch(true) {
+      case (attrib_val <= 3):
+          return {modval:-3};
+      case (attrib_val >= 4 && attrib_val <= 5 ):
+          return {modval:-2};   
+      case (attrib_val >= 6 && attrib_val <= 8 ):
+          return {modval:-1};
+      case (attrib_val >= 13 && attrib_val <= 15 ):
+          return {modval:1};
+      case (attrib_val >= 16 && attrib_val <= 17 ):
+          return {modval:2};
+      case (attrib_val == 18 ):
+          return {modval:3};
+      default:
+          return {modval:0};	
+      }
+      } 
+  
+  // Sorts attributes highest to lowest
+    attributes = attributes.sort(
+        function (a, b) {
+            return parseFloat(b.value) - parseFloat(a.value);
+        }
+    );
+  // Fixes CON an CHA Bottom of Array
+    var conAttr;
+    var chaAttr;
+    var conAttrkey;
+    var chaAttrkey;
+    for (let i=0;i<attributes.length;i++){
+      if (attributes[i].name == "CON"){
+        conAttr = attributes[i];
+          conAttrkey = i;}
+      if (attributes[i].name == "CHA"){
+        chaAttr = attributes[i];
+          chaAttrkey = i;}}
+    delete attributes[conAttrkey];
+    delete attributes[chaAttrkey];
+    attributes.push(conAttr);
+    attributes.push(chaAttr);
+    attributes = attributes.filter(val => val);  
+  // Determines Demi-human Eligibility   
+    function isHalfling(attribs){
+        let CON = getAttrib(attribs, "CON");
+        let DEX = getAttrib(attribs, "DEX");
+      if (CON.value > 9 && DEX.value > 9){
+        const randomBool = Math.random() > 0.8 ? true : false; 
+        return randomBool;        
+        }
+        return false;
+    }
+    function isDwarf(attribs){
+      let CON = getAttrib(attribs, "CON");
+      if (CON.value > 9){
+        const randomBool = Math.random() > 0.8 ? true : false; 
+        return randomBool;        
+        }
+        return false;
+    }
+    function isElf(attribs){
+        let INT = getAttrib(attribs, "INT");
+      if (INT.value > 9){
+        const randomBool = Math.random() > 0.8 ? true : false; 
+        return randomBool;
+        }
+      return false;
+    }
+  // Determines Final Class & Prime Requisite
+    var extraInit = 0;
+    finalclass = attributes[0].class[Math.floor(Math.random() * attributes[0].class.length)];
+    if (attributes[0].name == "DEX" || attributes[0].name == "STR"){
+      if (isHalfling(attributes)){
+        finalclass = "Halfling";
+      }
+    }
+    if (attributes[0].name == "INT" || attributes[0].name == "STR"){
+      if (isElf(attributes)){
+        finalclass = "Elf";
+      }
+    }  
+    if (attributes[0].name == "STR"){
+      if (isDwarf(attributes)){
+        finalclass = "Dwarf";
+      }
+    }  
+    switch(finalclass) {
+      case "Halfling":
+        finalrequisite = "DEX & STR";
+        extraInit = 1;
+        break;
+      case "Elf":
+        finalrequisite = "INT & STR";
+        break;
+      default:
+        finalrequisite = attributes[0].name;	
+    }
+  // Rolls HP Value, Gets Class Description, Gets Saving Throws
+    var hproll;
+    var description;
+    var languages;
+    var weapons;
+    var armor;
+    var xpnextlvl;
+    var ld;
+    var sd;
+    var ft;
+    var saves;
+    for (let i=0;i<classes.length;i++){
+      if (classes[i].name == finalclass){
+        hproll = rollDie(classes[i].hdsides);
+            description = classes[i].description;
+            languages = classes[i].languages;
+            weapons = classes[i].weapons;
+            armor = classes[i].armor;
+            saves = classes[i].saving_throws;
+            xpnextlvl = classes[i].xpnextlvl;
+            ld = classes[i].ld;
+            sd = classes[i].sd;
+            ft = classes[i].ft;
+
+      }
+    }
+    var dsave = getSaves(saves, "D").value;
+    var wsave = getSaves(saves, "W").value;
+    var psave = getSaves(saves, "P").value;
+    var bsave = getSaves(saves, "B").value;
+    var ssave = getSaves(saves, "S").value;
+    var finalac = getFinalFromModifier(getAttrib(attributes, "DEX").value,10,9);
+    var finalhp = getFinalFromModifier(getAttrib(attributes, "CON").value,hproll);
+  
+  	if (finalhp <= 0){
+      let finalhp = 1};
+  
+  // Sets Modifiers for Ability Scores
+    var strmod = getMod(getAttrib(attributes, "STR").value);
+    var intmod = getMod(getAttrib(attributes, "INT").value);
+    var wismod = getMod(getAttrib(attributes, "WIS").value);
+    var dexmod = getMod(getAttrib(attributes, "DEX").value);
+    var conmod = getMod(getAttrib(attributes, "CON").value);
+    var chamod = getMod(getAttrib(attributes, "CHA").value);
+
+  // Sets Open Door Value Based on STR
+    function getOd(attrib_val){
+      switch(true) {
+      case (attrib_val <= 3):
+          return {modval:1};
+      case (attrib_val >= 4 && attrib_val <= 5 ):
+          return {modval:1};   
+      case (attrib_val >= 6 && attrib_val <= 8 ):
+          return {modval:1};
+      case (attrib_val >= 13 && attrib_val <= 15 ):
+          return {modval:3};
+      case (attrib_val >= 16 && attrib_val <= 17 ):
+          return {modval:4};
+      case (attrib_val == 18 ):
+          return {modval:5};
+      default:
+          return {modval:2};	
+      }
+    } 
+    var od = getOd(getAttrib(attributes,"STR").value);
+
+  // Sets Starting Gold
+    var startgold = getgold(0);
+    function getgold(startgold) {
+      for (let i=0;i<10;i++){
+        startgold = rollDie(6) + startgold;
+      }
+     return startgold;
+    }
+
+  // Add to page
+
+    // Class Misc
+    document.getElementById("class").textContent = finalclass;
+    document.getElementById("languages").textContent = languages;
+    document.getElementById("weapons").textContent = weapons;
+    document.getElementById("armor").textContent = armor;
+    document.getElementById("startgold").textContent = startgold;
+    document.getElementById("description").textContent = description;
+    document.getElementById("job").textContent = job.name;
+    document.getElementById("xpnextlvl").textContent = xpnextlvl;
+
+    // Exploration
+    document.getElementById("ld").textContent = ld;
+    document.getElementById("sd").textContent = sd;
+    document.getElementById("ft").textContent = ft;
+    document.getElementById("od").textContent = od.modval;
+    
+    // Modifiers
+    document.getElementById("strmod").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(strmod.modval);
+    document.getElementById("intmod").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(intmod.modval);
+    document.getElementById("wismod").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(wismod.modval);
+    document.getElementById("dexmod").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(dexmod.modval);
+  
+	  // Dex 2 for INIT
+  	document.getElementById("dexmod_2").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(Number(dexmod.modval) + extraInit);
+  	document.getElementById("conmod").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(conmod.modval);
+    document.getElementById("chamod").textContent = new Intl.NumberFormat("en-US", {signDisplay: "exceptZero"}).format(chamod.modval);
+    
+    // Saves
+    document.getElementById("D").textContent = dsave;
+    document.getElementById("W").textContent = wsave;
+    document.getElementById("P").textContent = psave;
+    document.getElementById("B").textContent = bsave;
+    document.getElementById("S").textContent = ssave;
+
+    document.getElementById("descending_ac").textContent = finalac.dsc;
+    document.getElementById("ascending_ac").textContent = finalac.asc;
+    document.getElementById("hp").textContent = finalhp.asc;
+    document.getElementById("prime_req").textContent = finalrequisite;
+    attributes.forEach(function (attrib, key) {
+        if (key == 0)
+        { 
+          document.getElementById(attrib.doc_id).innerHTML = `<b>${attrib.value.toFixed()}</b>`;
+        }
+        else
+        {
+          document.getElementById(attrib.doc_id).textContent = attrib.value.toFixed();
+        }
+    });
+</script>

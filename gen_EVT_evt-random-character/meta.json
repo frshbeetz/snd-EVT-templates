@@ -1,0 +1,11 @@
+{
+	"name": "OSE Character Generator",
+	"slug": "evt-random-character",
+	"author": "EVT",
+	"description": "Generates Random Characters for Old School Essentials.",
+	"passEntriesToJS": false,
+	"config": [],
+	"images": {},
+	"dataSources": [],
+	"version": ""
+}
