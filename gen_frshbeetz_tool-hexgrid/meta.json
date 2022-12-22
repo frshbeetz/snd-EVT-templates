@@ -1,8 +1,8 @@
 {
 	"name": "Hexgrid",
 	"slug": "tool-hexgrid",
-	"author": "EVT",
-	"description": "",
+	"author": "frshbeetz",
+	"description": "Generates a blank hexgrid.",
 	"passEntriesToJS": false,
 	"config": [],
 	"images": {},
