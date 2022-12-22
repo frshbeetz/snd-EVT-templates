@@ -1,0 +1,59 @@
+<style>
+  * {font-family:sans-serif;}
+  td {text-align:center;}
+  th {background-color:black;color:white}
+  #misc_table td {text-align:left;}
+  td, th {height:20px;min-width:5px;}
+  /* div {margin-left: 10px; margin-right: 10px;} */
+  h1, h2, h3, h4, h5, h6 {margin:0 0 0 0;}
+  hr {border-top: 5px solid black;}
+  ul {list-style-type: none;list-style-position:inside;margin:0;padding:0;}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
+  	min-height:50px;
+}
+</style>
+
+<h1>NAME<span id="name"></span></h1>
+<hr>
+
+<canvas id="canvas" width="600px" height="400"></canvas>
+
+
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+const a = 2 * Math.PI / 6;
+const r = 50;
+
+function init() {
+  drawGrid(canvas.width, canvas.height);
+}
+init();
+
+function drawGrid(width, height) {
+  for (let y = r; y + r * Math.sin(a) < height; y += r * Math.sin(a)) {
+    for (let x = r, j = 0; x + r * (1 + Math.cos(a)) < width; x += r * (1 + Math.cos(a)), y += (-1) ** j++ * r * Math.sin(a)) {
+      drawHexagon(x, y);
+    }
+  }
+}
+
+function drawHexagon(x, y) {
+  ctx.beginPath();
+  for (let i = 0; i < 6; i++) {
+    ctx.lineTo(x + r * Math.cos(a * i), y + r * Math.sin(a * i));
+    ctx.lineWidth = 5;
+
+  }
+  ctx.closePath();
+  ctx.stroke();
+
+}
+</script>

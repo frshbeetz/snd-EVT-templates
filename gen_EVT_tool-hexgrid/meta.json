@@ -1,0 +1,11 @@
+{
+	"name": "Small Hexgrid Generator",
+	"slug": "tool-hexgrid",
+	"author": "EVT",
+	"description": "",
+	"passEntriesToJS": false,
+	"config": [],
+	"images": {},
+	"dataSources": [],
+	"version": ""
+}
