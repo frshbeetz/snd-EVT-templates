@@ -4,7 +4,7 @@
 	"author": "frshbeetz",
 	"description": "OSE Adventuring Gear",
 	"dataSources": [
-		"ds:+ose-content-equipment-adventuring-gear"
+		"ds:frshbeetz+ose-content-equipment-adventuring-gear"
 	],
 	"images": {}
 }
