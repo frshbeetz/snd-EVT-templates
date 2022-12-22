@@ -31,6 +31,7 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 
 * **Adventuring Gear**
 * **Monsters - OSE**
+* **Potions - OSE**
 
 # Templates
 

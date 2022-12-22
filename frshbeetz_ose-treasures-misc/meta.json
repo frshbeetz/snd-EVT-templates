@@ -1,0 +1,10 @@
+{
+	"name": "Misc Treasures - OSE",
+	"slug": "ose-treasures-misc",
+	"author": "frshbeetz",
+	"description": "OSE Misc Treasures",
+	"dataSources": [
+		"ds:+ose-content-treasures-miscellaneous-items"
+	],
+	"images": {}
+}
