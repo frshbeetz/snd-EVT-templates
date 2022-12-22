@@ -1,0 +1,36 @@
+<style>
+    * {font-family:sans-serif;}
+    hr {border-top: 5px solid black;}
+</style>
+
+<body>
+    <center><span>⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋</span></center>
+    <br>
+    <br>
+    <div id="heading">
+        <center><h1><span id="name" style="font-size:200%"></span>{{it.name}}</h1></center>
+        <center><h2><span id="name2" style="font-size:200%"></span></h2></center>
+
+    </div>
+    <hr>
+    <div id ="duration_range" style="font-size:150%">
+        <b>Duration:</b> {{it.duration}} <span id="duration"></span><span>
+        <br>
+        <b>Range:</b> {{it.range}} <span id="range"></span><span>
+    </div>
+
+    <span id="description" style="font-size:150%">{{ it.description | safe }}</span>
+    <span id="description2" style="font-size:150%"></span>
+    <br>
+	<center>
+        <span style="font-size:150%"><b>Level: </b>{{it.lvl}}</span><span id="lvl" style="font-size:150%"></span><span style="font-size:150%"> · </span>
+        <span style="font-size:150%"><b>Class: </b>{{it.class}}</span><span id="class" style="font-size:150%"></span><span style="font-size:150%"> · </span>
+        <span style="font-size:150%"><b>Save: </b>{{it.save}}</span><span id="save" style="font-size:150%"></span><span style="font-size:150%"></span>
+
+     </center>
+    <br>
+    <center><span>&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</span></center>
+    <br>
+    <br>
+    <br>
+</body>

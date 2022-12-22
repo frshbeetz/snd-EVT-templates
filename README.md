@@ -31,6 +31,7 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 
 * **Adventuring Gear - OSE**
 * **Monsters - OSE**
+* **Spells - OSE**
 * **Potions - OSE**
 * **Misc Treasures - OSE**
 * **Rings - OSE**
@@ -41,6 +42,7 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 
 * **Adventuring Gear - OSE**
 * **Monsters - OSE**
+* **Spells - OSE**
 * **Potions - OSE**
 * **Misc Treasures - OSE**
 * **Rings - OSE**

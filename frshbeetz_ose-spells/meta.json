@@ -1,0 +1,10 @@
+{
+	"name": "Spells - OSE",
+	"slug": "ose-spells",
+	"author": "frshbeetz",
+	"description": "OSE Spells",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-spells"
+	],
+	"images": {}
+}

@@ -1,0 +1,21 @@
+{
+	"cast": 0,
+	"class": "Cleric",
+	"description": "\u003cp\u003ePlaces a deleterious effect upon a creature, if it fails a \u003cstrong\u003esave versus spells\u003c/strong\u003e.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eEffects:\u003c/strong\u003eThe exact form and effects of the curse are determined by the caster.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMaximum possible effects include:\u003c/strong\u003e A -2 penalty to saving throws, a -4 penalty to hit, reducing an ability score by 50%.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMultiple curses:\u003c/strong\u003e May afflict a creature, as long as each has a different effect.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReferee judgement: \u003c/strong\u003eThe referee should judge the effects of this spell and may turn overly powerful curses back onto the caster!\u003c/li\u003e\n\u003c/ul\u003e",
+	"duration": "Permanent",
+	"lvl": 5,
+	"memorized": 0,
+	"name": "C3.5r Curse",
+	"range": "The caster or a creature touched",
+	"roll": "",
+	"save": "spell",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "1m98fsYGkatDAf47",
+		"Img": "systems/ose/assets/default/spell.png",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "spell"
+	}
+}
