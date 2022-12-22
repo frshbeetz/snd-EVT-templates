@@ -29,9 +29,10 @@ Prints a small Hex Grid. [WIP]
 
 Data sources from VTT ose-content, converted from from the OSE SRD.
 
-* **Adventuring Gear**
+* **Adventuring Gear - OSE**
 * **Monsters - OSE**
 * **Potions - OSE**
+* **Misc Treasures - OSE**
 
 # Templates
 
@@ -40,3 +41,4 @@ Data sources from VTT ose-content, converted from from the OSE SRD.
 * **Adventuring Gear - OSE**
 * **Monsters - OSE**
 * **Potions - OSE**
+* **Misc Treasures - OSE**
