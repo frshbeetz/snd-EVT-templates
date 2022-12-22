@@ -1,0 +1,20 @@
+{
+	"cost": 2,
+	"description": "\u003cp\u003eA flask of oil fuels a lantern for four hours (24 turns). In addition to fueling lanterns, oil can be used as a weapon:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eThrowing:\u003c/strong\u003e An oil flask may be lit on fire and thrown (see \u003ca href=\"https://oldschoolessentials.necroticgnome.com/srd/index.php/Weapons_And_Armour\"\u003eWeapons And Armour\u003c/a\u003e).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ePools: \u003c/strong\u003eOil that is poured on the ground and lit covers a diameter of 3 feet and burns for 1 turn, inflicting damage on any character or monster moving through the pool.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eImmunity:\u003c/strong\u003e Burning oil does not harm monsters that have a natural flame attack.\u003c/li\u003e\n\u003c/ul\u003e",
+	"name": "Oil flask",
+	"quantity": {
+		"max": null,
+		"value": 1
+	},
+	"treasure": false,
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "Y2Z3ua6rcgpZ2qxt",
+		"Img": "icons/sundries/survival/wetskin-leather-red.webp",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "item"
+	},
+	"weight": null
+}

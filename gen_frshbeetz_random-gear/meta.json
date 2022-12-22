@@ -1,0 +1,11 @@
+{
+	"name": "Random Adventuring Gear - OSE",
+	"slug": "random-gear",
+	"author": "frshbeetz",
+	"description": "Random Adventuring gear for OSE.",
+	"passEntriesToJS": false,
+	"config": [],
+	"images": {},
+	"dataSources": [],
+	"version": ""
+}

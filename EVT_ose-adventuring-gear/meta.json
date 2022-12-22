@@ -1,0 +1,10 @@
+{
+	"name": "OSE Adventuring Gear",
+	"slug": "ose-adventuring-gear",
+	"author": "EVT",
+	"description": "OSE Adventuring Gear",
+	"dataSources": [
+		"ds:+ose-content-equipment-adventuring-gear"
+	],
+	"images": {}
+}
