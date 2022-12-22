@@ -364,7 +364,7 @@
     ];
   // Medieval Jobs
     var jobs=[{name:"Academic"},{name:"Actor"},{name:"Alchemist"},{name:"Animal Trainer"},{name:"Apothecary"},{name:"Aristocrat"},{name:"Armourer"},{name:"Artist"},{name:"Assassin"},{name:"Astrologer"},{name:"Atilliator"},{name:"Baker"},{name:"Barber"},{name:"Bartender"},{name:"Beekeeper"},{name:"Beggar"},{name:"Bellringer"},{name:"Besom Maker"},{name:"Blacksmith"},{name:"Bloodletter"},{name:"Bodger"},{name:"Bouncer"},{name:"Bowyer"},{name:"Brewer"},{name:"Bricklayer"},{name:"Busker"},{name:"Butcher"},{name:"Butler"},{name:"Candlestick Maker"},{name:"Caravan Guard"},{name:"Cartographer"},{name:"Chapman"},{name:"Cheesemonger"},{name:"Chimneyi Sweep"},{name:"Chirurgeon"},{name:"Clockmaker"},{name:"Clown"},{name:"Cobbler"},{name:"Colporteur"},{name:"Cook"},{name:"Cooper"},{name:"Courtesan"},{name:"Crystal"},{name:"Cultist"},{name:"Cupbearer"},{name:"Cutpurse"},{name:"Dentist"},{name:"Diplomat"},{name:"Ditch Digger"},{name:"Dog Breeder"},{name:"Drug Dealer"},{name:"Dung Collecter"},{name:"Dyer"},{name:"Engraver"},{name:"Faith Healer"},{name:"Falconer"},{name:"Farmer"},{name:"Farrier"},{name:"Fence"},{name:"Fireman"},{name:"Fisherman"},{name:"Flagellant"},{name:"Fletcher"},{name:"Forester"},{name:"Fortunei Teller"},{name:"Fowler"},{name:"Fuller"},{name:"Furrier"},{name:"Gambler"},{name:"Gardener"},{name:"Glassblower"},{name:"Gluemaker"},{name:"Gong Farmer"},{name:"Grave Robber"},{name:"Greengrocer"},{name:"Grifter"},{name:"Gutter Cleaner"},{name:"Gyspy"},{name:"Haberdasher"},{name:"Handyman"},{name:"Hawker"},{name:"Hayward"},{name:"Herbalist"},{name:"Hermit"},{name:"Hetheleder"},{name:"Horse"},{name:"Hunter"},{name:"Icecutter"},{name:"Incense Bearer"},{name:"Jester"},{name:"Jeweler"},{name:"Joiner"},{name:"Knacker"},{name:"Lamp Lighter"},{name:"Lawyer"},{name:"Leatherworker"},{name:"Librarian"},{name:"Lighterman"},{name:"Linkboy"},{name:"Locksmith"},{name:"Lookout"},{name:"Mason"},{name:"Mercenary"},{name:"Messenger"},{name:"Midwife"},{name:"Milkmaid"},{name:"Miller"},{name:"Milliner"},{name:"Miner"},{name:"Minstrel"},{name:"Moneylender"},{name:"Monk"},{name:"Mucker"},{name:"Night"},{name:"Nobleman's"},{name:"Occupation"},{name:"Organ Thief"},{name:"Orphan"},{name:"Ostler"},{name:"Outlaw"},{name:"Oyster Raker"},{name:"Painter"},{name:"Parchment Maker"},{name:"Pawnbroker"},{name:"Peat Cutter"},{name:"Philosopher"},{name:"Pickler"},{name:"Pie Maker"},{name:"Pimp"},{name:"Pirate"},{name:"Plague Doctor"},{name:"Postman"},{name:"Prison"},{name:"Prostitute"},{name:"Puppeteer"},{name:"Quill"},{name:"Rat Catcher"},{name:"Riverbank Comber"},{name:"Sailor"},{name:"Scholar"},{name:"Scribe"},{name:"Scrimshaw"},{name:"Scullion"},{name:"Seamstress"},{name:"Servant"},{name:"Sewerhand"},{name:"Shaman"},{name:"Shepherd"},{name:"Shingler"},{name:"Shipwright"},{name:"Shoe Shiner"},{name:"Shrubber"},{name:"Sinecure"},{name:"Slave"},{name:"Slaver"},{name:"Smuggler"},{name:"Soldier"},{name:"Spice Merchant"},{name:"Spy"},{name:"Squire"},{name:"Stevedore"},{name:"Stonecutter"},{name:"Street Sweeper"},{name:"Tailor"},{name:"Taxidermist"},{name:"Thatcher"},{name:"Thief"},{name:"Thug"},{name:"Tinker"},{name:"Torturer"},{name:"Trader"},{name:"Trapper"},{name:"Urchin"},{name:"Vaginarius"},{name:"Vagrant"},{name:"Veterinarian"},{name:"Village Idiot"},{name:"Vintner"},{name:"Wainwright"},{name:"Water Carrier"},{name:"Weaponsmith"},{name:"Weaver"},{name:"Window Tapper"},{name:"Woodcutter"},{name:"Zealot"}];
-    var job = jobs[Math.floor(Math.random() * jobs.length)];
+    var job = jobs[Math.floor(random() * jobs.length)];
   // Gets Attribute Object Based on Name
     function getAttrib(attribs, attrib){
       for (let i=0; i<attribs.length; i++){
@@ -374,7 +374,7 @@
     } 
   // Rolls a Die of X Sides
    function rollDie(sides){
-      let roll = 1 + Math.floor(Math.random() * sides);
+      let roll = 1 + Math.floor(random() * sides);
       while (roll == 0){
         roll = rollDie(sides);
       }
@@ -463,7 +463,7 @@
         let CON = getAttrib(attribs, "CON");
         let DEX = getAttrib(attribs, "DEX");
       if (CON.value > 9 && DEX.value > 9){
-        const randomBool = Math.random() > 0.8 ? true : false; 
+        const randomBool = random() > 0.8 ? true : false; 
         return randomBool;        
         }
         return false;
@@ -471,7 +471,7 @@
     function isDwarf(attribs){
       let CON = getAttrib(attribs, "CON");
       if (CON.value > 9){
-        const randomBool = Math.random() > 0.8 ? true : false; 
+        const randomBool = random() > 0.8 ? true : false; 
         return randomBool;        
         }
         return false;
@@ -479,14 +479,14 @@
     function isElf(attribs){
         let INT = getAttrib(attribs, "INT");
       if (INT.value > 9){
-        const randomBool = Math.random() > 0.8 ? true : false; 
+        const randomBool = random() > 0.8 ? true : false; 
         return randomBool;
         }
       return false;
     }
   // Determines Final Class & Prime Requisite
     var extraInit = 0;
-    finalclass = attributes[0].class[Math.floor(Math.random() * attributes[0].class.length)];
+    finalclass = attributes[0].class[Math.floor(random() * attributes[0].class.length)];
     if (attributes[0].name == "DEX" || attributes[0].name == "STR"){
       if (isHalfling(attributes)){
         finalclass = "Halfling";
