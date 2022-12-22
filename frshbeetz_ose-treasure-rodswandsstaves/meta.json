@@ -1,0 +1,10 @@
+{
+	"name": "Rods/Wands/Staves - OSE",
+	"slug": "ose-treasure-rodswandsstaves",
+	"author": "EVT",
+	"description": "OSE Rods/Wands/Staves",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-treasures-rods-staffs-wands"
+	],
+	"images": {}
+}

@@ -1,0 +1,20 @@
+{
+	"cost": 0,
+	"description": "\u003cp\u003eGrants the power to detect masses of metal of any type.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eExpending a charge:\u003c/strong\u003e Causes the wand to point towards metal within 20′.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eType:\u003c/strong\u003e The type of metal is revealed.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMinimum mass:\u003c/strong\u003e Only masses of metal of at least 1,000 coins in weight are detected.\u003c/li\u003e\n\u003c/ul\u003e",
+	"name": "Wand of Metal Detection",
+	"quantity": {
+		"max": 0,
+		"value": 1
+	},
+	"treasure": false,
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "0sLOpN5G2SoOTrf6",
+		"Img": "icons/weapons/wands/wand-gem-purple.webp",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "item"
+	},
+	"weight": 0
+}
