@@ -4,7 +4,7 @@
 	"author": "frshbeetz",
 	"description": "OSE Monsters from the SRD",
 	"dataSources": [
-		"ds:+ose-content-monsters"
+		"ds:frshbeetz+ose-content-monsters"
 	],
 	"images": {}
 }
