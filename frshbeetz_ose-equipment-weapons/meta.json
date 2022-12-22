@@ -1,0 +1,10 @@
+{
+	"name": "OSE Weapons",
+	"slug": "ose-equipment-weapons",
+	"author": "frshbeetz",
+	"description": "OSE Weapons",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-equipment-weapons"
+	],
+	"images": {}
+}
