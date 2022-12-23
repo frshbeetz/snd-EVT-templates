@@ -1,0 +1,10 @@
+{
+	"name": "OSE Magic Weapons",
+	"slug": "ose-treasure-weapons",
+	"author": "frshbeetz",
+	"description": "OSE Magic Weapons",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-treasures-weapons"
+	],
+	"images": {}
+}

@@ -1,0 +1,51 @@
+{
+	"bonus": 3,
+	"cost": 0,
+	"counter": {
+		"max": 0,
+		"value": 0
+	},
+	"damage": "1d4+1",
+	"description": "\u003cp\u003e\u003cstrong\u003eMelee: \u003c/strong\u003eClose quarters weapon (5’ or less).\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eMissile:\u003c/strong\u003e Thrown or fired weapon (greater than 5’ distance).The distances for short (+1 to hit), medium, and long (–1 to hit) range are shown in parentheses.\u003c/p\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e",
+	"equipped": false,
+	"melee": true,
+	"missile": false,
+	"name": "Dagger +1",
+	"pattern": "white",
+	"quantity": {
+		"max": 0,
+		"value": 2
+	},
+	"range": {
+		"long": 0,
+		"medium": 0,
+		"short": 0
+	},
+	"save": "",
+	"slow": false,
+	"tags": [
+		{
+			"title": "Melee",
+			"value": "Melee"
+		},
+		{
+			"title": "5’–20’ / 21’–40’ / 41’–60’",
+			"value": "Missile"
+		},
+		{
+			"title": "Brace",
+			"value": "Brace"
+		}
+	],
+	"treasure": false,
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "0MqIL6Fgba4bzEHJ",
+		"Img": "modules/ose-content/assets/weapons/dagger_03_b.PNG",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "weapon"
+	},
+	"weight": 30
+}
