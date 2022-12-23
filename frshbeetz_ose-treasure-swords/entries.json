@@ -1,0 +1,44 @@
+[
+	{
+		"id": "ENT-621004-945913",
+		"name": "The Azure Serpent Blade",
+		"data": {
+			"bonus": 1,
+			"cost": 0,
+			"counter": {
+				"max": 0,
+				"value": 0
+			},
+			"damage": "1d6+1",
+			"description": "\u003cp\u003eMelee: Close quarters weapon (5′ or less).\u003c/p\u003e\n\u003cp\u003eGrants the wielder the ability to breathe underwater\u003c/p\u003e",
+			"equipped": false,
+			"melee": true,
+			"missile": false,
+			"name": "Sword +1, The Azure Serpent Blade",
+			"pattern": "transparent",
+			"range": {
+				"long": 0,
+				"medium": 0,
+				"short": 0
+			},
+			"save": "",
+			"slow": false,
+			"tags": [
+				{
+					"title": "Melee",
+					"value": "Melee"
+				}
+			],
+			"vtt_meta": {
+				"Flags": {},
+				"ID": "C67fh9sXY2mJxs9V",
+				"Img": "icons/weapons/swords/greatsword-crossguard-flanged-red.webp",
+				"Permission": {
+					"Default": 0
+				},
+				"Type": "weapon"
+			},
+			"weight": 60
+		}
+	}
+]

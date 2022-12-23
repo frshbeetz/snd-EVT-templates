@@ -1,0 +1,38 @@
+{
+	"bonus": 1,
+	"cost": 0,
+	"counter": {
+		"max": 0,
+		"value": 0
+	},
+	"damage": "1d8+2",
+	"description": "\u003cp\u003eMelee: Close quarters weapon (5′ or less).\u003c/p\u003e\n\u003cp\u003eGrants the wielder the ability to charm other people.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eEffect:\u003c/strong\u003e This works in the same way as the magic-user spell \u003ca title=\"Charm Person\" href=\"https://oldschoolessentials.necroticgnome.com/srd/index.php/Charm_Person\"\u003eCharm Person\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eUsage frequency:\u003c/strong\u003e The power may be used up to three times a week.\u003c/li\u003e\n\u003c/ul\u003e",
+	"equipped": false,
+	"melee": true,
+	"missile": false,
+	"name": "Sword +2, Charm Person",
+	"pattern": "transparent",
+	"range": {
+		"long": 0,
+		"medium": 0,
+		"short": 0
+	},
+	"save": "",
+	"slow": false,
+	"tags": [
+		{
+			"title": "Melee",
+			"value": "Melee"
+		}
+	],
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "C67fh9sXY2mJxs9V",
+		"Img": "icons/weapons/swords/greatsword-crossguard-flanged-red.webp",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "weapon"
+	},
+	"weight": 60
+}
