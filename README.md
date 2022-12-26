@@ -27,7 +27,7 @@ Prints a small Hex Grid. [WIP]
 
 ---
 
-Data sources from VTT ose-content, converted from from the OSE SRD.
+Data sources converted from from the OSE SRD, via VTTred ose-content: https://github.com/vttred/ose-content 
 
 * **Adventuring Gear - OSE**
 * **Monsters - OSE**
