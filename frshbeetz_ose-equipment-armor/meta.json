@@ -1,0 +1,10 @@
+{
+	"name": "Armor - OSE",
+	"slug": "ose-equipment-armor",
+	"author": "frshbeetz",
+	"description": "OSE Armor",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-equipment-armour"
+	],
+	"images": {}
+}

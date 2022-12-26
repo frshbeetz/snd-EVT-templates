@@ -1,0 +1,10 @@
+{
+	"name": "Magic Armor \u0026 Shields - OSE",
+	"slug": "treasure-armorshields",
+	"author": "frshbeetz",
+	"description": "Magic armor and shields for OSE.",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-treasures-armour-shields"
+	],
+	"images": {}
+}

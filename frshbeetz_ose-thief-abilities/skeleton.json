@@ -1,0 +1,20 @@
+{
+	"blindroll": false,
+	"description": "\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003eA thief of \u003cstrong\u003e4th level\u003c/strong\u003e or higher can read non-magical text in any language (including dead languages and basic codes) with 80% probability. If the roll does not succeed, the thief may not try to read that particular text again until they reach a higher level of experience.\u003c/p\u003e",
+	"name": "Read Languages",
+	"pattern": "white",
+	"requirements": "Thief, Level 4",
+	"roll": "",
+	"rollTarget": 0,
+	"rollType": "result",
+	"save": "",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "3IGAL54BibTFxZF4",
+		"Img": "/systems/ose/assets/default/ability.png",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "ability"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Magic-User Abilities - OSE",
+	"slug": "ose-magicuser-abilities",
+	"author": "frshbeetz",
+	"description": "OSE Magic-User Abilities",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-magic-user"
+	],
+	"images": {}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "Random Character - OSE",
+	"slug": "random-character",
+	"author": "frshbeetz",
+	"description": "Generates Random Characters for Old School Essentials.",
+	"passEntriesToJS": false,
+	"config": [],
+	"images": {},
+	"dataSources": [],
+	"version": ""
+}

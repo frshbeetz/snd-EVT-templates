@@ -1,0 +1,46 @@
+<style>
+  * {font-family:sans-serif;}
+  h1, h2, h3, h4, h5, h6 {margin:0 0 0 0;}
+  hr {border-top:5px solid;}
+  #card {
+    width:455px;
+    height:660px;
+    border-right:2px solid;
+    border-top:2px solid;
+
+  }
+  #inner {
+  	margin-left:0px;
+    margin-right:20px;
+  	}
+</style>
+
+<html>
+<div id="card">
+  <br>
+  <div id="inner">
+    <div style="margin-left:auto;margin-right:auto;"><center><img src="{{ images['armor.png'] }}" alt="" style="max-width:90%"/></center></div>  
+    <br>
+    <div>
+      <center><span style="font-size:100%"><h2 id="itemnumber"></h2></span></center>
+      <br>
+      <hr>
+      <span style="font-size:145%"><h5 id="description"></h5></span>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+</html>
+  
+<script>
+
+  var itemcount = entries.length;
+  const itemnumber = Math.floor(Math.random() * itemcount);  
+  document.getElementById("itemnumber").textContent = entries[itemnumber].name
+  document.getElementById("description").innerHTML = entries[itemnumber].data.description
+
+</script>
+
+
+  

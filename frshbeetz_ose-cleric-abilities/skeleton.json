@@ -1,0 +1,20 @@
+{
+	"blindroll": false,
+	"description": "\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003eSee\u0026nbsp;\u003ca style=\"box-sizing: border-box; user-select: text;\" title=\"Rules of Magic\" href=\"https://oldschoolessentials.necroticgnome.com/srd/index.php/Rules_of_Magic\"\u003eRules of Magic\u003c/a\u003e\u0026nbsp;for full details on divine magic.\u003c/p\u003e\n\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003e\u003cstrong style=\"box-sizing: border-box; user-select: text;\"\u003eHoly symbol:\u003c/strong\u003e\u0026nbsp;A cleric must carry a holy symbol (see\u0026nbsp;\u003ca style=\"box-sizing: border-box; user-select: text;\" title=\"Adventuring Gear\" href=\"https://oldschoolessentials.necroticgnome.com/srd/index.php/Adventuring_Gear\"\u003eAdventuring Gear\u003c/a\u003e).\u003c/p\u003e\n\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003e\u003cstrong style=\"box-sizing: border-box; user-select: text;\"\u003eDeity disfavour:\u003c/strong\u003e\u0026nbsp;Clerics must be faithful to the tenets of their alignment, clergy, and religion. Clerics who fall from favour with their deity may incur penalties.\u003c/p\u003e\n\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003e\u003cstrong style=\"box-sizing: border-box; user-select: text;\"\u003eMagical research:\u003c/strong\u003e\u0026nbsp;A cleric of any level may spend time and money on magical research. This allows them to create new spells or other magical effects associated with their deity. When a cleric reaches 9th level, they are also able to create magic items.\u003c/p\u003e\n\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003e\u003cstrong style=\"box-sizing: border-box; user-select: text;\"\u003eSpell casting:\u003c/strong\u003e\u0026nbsp;Once a cleric has proven their faith (from 2nd level), the character may pray to receive spells. The power and number of spells available to a cleric are determined by the character\u0026rsquo;s experience level. The list of spells available to clerics is found in\u0026nbsp;\u003ca class=\"mw-redirect\" style=\"box-sizing: border-box; user-select: text;\" title=\"Cleric Spell List\" href=\"https://oldschoolessentials.necroticgnome.com/srd/index.php/Cleric_Spell_List\"\u003eCleric Spell List\u003c/a\u003e.\u003c/p\u003e\n\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003e\u003cstrong style=\"box-sizing: border-box; user-select: text;\"\u003eUsing magic items:\u003c/strong\u003e\u0026nbsp;As spell casters, clerics can use magic scrolls of spells on their spell list. They can also use items that may only be used by divine spell casters (e.g. some magic staves).\u003c/p\u003e",
+	"name": "Divine Magic",
+	"pattern": "white",
+	"requirements": "Cleric",
+	"roll": "",
+	"rollTarget": 0,
+	"rollType": "result",
+	"save": "",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "wtTNJHGiV4d39gvE",
+		"Img": "/systems/ose/assets/default/ability.png",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "ability"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Dwarf Abilities - OSE",
+	"slug": "ose-dwarf-abilities",
+	"author": "frshbeetz",
+	"description": "Abilities Dwarf OSE",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-dwarf"
+	],
+	"images": {}
+}

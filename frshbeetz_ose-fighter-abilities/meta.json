@@ -1,0 +1,10 @@
+{
+	"name": "Fighter Abilities - OSE",
+	"slug": "ose-fighter-abilities",
+	"author": "frshbeetz",
+	"description": "Fighter Abilities OSE.",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-fighter"
+	],
+	"images": {}
+}

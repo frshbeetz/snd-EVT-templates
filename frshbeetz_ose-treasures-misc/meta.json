@@ -4,7 +4,7 @@
 	"author": "frshbeetz",
 	"description": "OSE Misc Treasures",
 	"dataSources": [
-		"ds:+ose-content-treasures-miscellaneous-items"
+		"ds:frshbeetz+ose-content-treasures-miscellaneous-items"
 	],
 	"images": {}
 }

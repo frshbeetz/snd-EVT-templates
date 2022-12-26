@@ -1,0 +1,23 @@
+{
+	"aac": {
+		"value": 12
+	},
+	"ac": {
+		"value": 7
+	},
+	"cost": 20,
+	"description": "",
+	"equipped": false,
+	"name": "Plate mail",
+	"type": "heavy",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "7iWthUf8FGPFykNc",
+		"Img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "armor"
+	},
+	"weight": 200
+}

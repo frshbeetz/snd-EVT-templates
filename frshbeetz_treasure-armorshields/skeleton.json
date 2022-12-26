@@ -1,0 +1,23 @@
+{
+	"aac": {
+		"value": 14
+	},
+	"ac": {
+		"value": 5
+	},
+	"cost": null,
+	"description": "",
+	"equipped": false,
+	"name": "Shield +2",
+	"type": "shield",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "0gPHfe8U1gQsluzR",
+		"Img": "icons/equipment/shield/heater-wooden-brown-axe.webp",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "armor"
+	},
+	"weight": 200
+}

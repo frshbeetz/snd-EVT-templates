@@ -1,0 +1,10 @@
+{
+	"name": "Elf Abilities - OSE",
+	"slug": "ose-elf-abilities",
+	"author": "frshbeetz",
+	"description": "Abilities Elf OSE",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-elf"
+	],
+	"images": {}
+}

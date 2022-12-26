@@ -1,0 +1,10 @@
+{
+	"name": "Cleric Abilities - OSE",
+	"slug": "ose-cleric-abilities",
+	"author": "frshbeetz",
+	"description": "Cleric Abilities OSE",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-cleric"
+	],
+	"images": {}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Halfling Abilities - OSE",
+	"slug": "ose-halfling-abilities",
+	"author": "frshbeetz",
+	"description": "Halfling Abilities OSE",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-halfling"
+	],
+	"images": {}
+}

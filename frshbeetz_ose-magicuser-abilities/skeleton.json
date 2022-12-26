@@ -1,0 +1,20 @@
+{
+	"blindroll": false,
+	"description": "\u003cp style=\"box-sizing: border-box; user-select: text; color: #191813;\"\u003eMagic-users can only use daggers and are unable to use shields or wear any kind of armour. This makes them very vulnerable in combat.\u003c/p\u003e",
+	"name": "Combat",
+	"pattern": "white",
+	"requirements": "Magic-User",
+	"roll": "",
+	"rollTarget": 0,
+	"rollType": "result",
+	"save": "",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "0b0xQ5btT391a4wL",
+		"Img": "/systems/ose/assets/default/ability.png",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "ability"
+	}
+}

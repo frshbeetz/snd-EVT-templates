@@ -1,26 +1,43 @@
 <style>
-	* {font-family:sans-serif;}
-	hr {border-top: 5px solid black;}
+  * {font-family:sans-serif;}
+  h1, h2, h3, h4, h5, h6 {margin:0 0 0 0;}
+  hr {border-top:5px solid;}
+  #card {
+    width:455px;
+    height:660px;
+    border-right:2px solid;
+    border-top:2px solid;
+
+  }
+  #inner {
+  	margin-left:0px;
+    margin-right:20px;
+  	}
 </style>
 
 <body>
-    <center><span>⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋⅋</span></center>
+  <div id="card">
+    <div id="inner">
+      <br>
+    <div style="margin-left:auto;margin-right:auto;"><center><img src="{{ images['gear.png'] }}" alt="" style="max-width:25%"/></center></div>  
+
     <br>
     <br>
     <div id="heading">
-        <center><h1><span id="name" style="font-size:200%"></span></h1></center>
+        <center><h2><span id="name" style="font-size:100%"></span></h2></center>
     </div>
     <hr>
-        <span id="description" style="font-size:150%"></span>
+        <span id="description" style="font-size:145%"></span>
     <br>
     <br>
 
 	 <center><span style="font-size:150%"><b>Value: </b></span><span id="cost" style="font-size:150%"></span><span style="font-size:150%"> GP</span></center>
     <br>
-    <center><span>&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&</span></center>
     <br>
     <br>
     <br>
+    </div>
+  </div>
 </body>
 
 
@@ -112,7 +129,7 @@ var items = [
 		},
 		{
 			"name": "Lantern",
-			"description": "Can be closed to hide the light.Burns one oil flask every four hours (24 turns). Casts light in a 30&prime; radius.",
+			"description": "Can be closed to hide the light. Burns one oil flask every four hours (24 turns). Casts light in a 30&prime; radius.",
 			"cost": 10
 		},
 		{

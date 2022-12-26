@@ -1,0 +1,20 @@
+{
+	"blindroll": false,
+	"description": "\u003cp\u003e\u003cspan style=\"color: #191813;\"\u003eElves can use all types of weapons and armour.\u003c/span\u003e\u003c/p\u003e",
+	"name": "Combat",
+	"pattern": "white",
+	"requirements": "Elf",
+	"roll": "",
+	"rollTarget": 0,
+	"rollType": "result",
+	"save": "",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "7TwhmiVEKAaw2NEq",
+		"Img": "/systems/ose/assets/default/ability.png",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "ability"
+	}
+}

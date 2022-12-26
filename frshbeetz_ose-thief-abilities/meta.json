@@ -1,0 +1,10 @@
+{
+	"name": "Thief Abilities - OSE",
+	"slug": "ose-thief-abilities",
+	"author": "frshbeetz",
+	"description": "Thief Abilities OSE",
+	"dataSources": [
+		"ds:frshbeetz+ose-content-abilities-thief"
+	],
+	"images": {}
+}

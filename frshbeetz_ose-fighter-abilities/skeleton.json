@@ -1,0 +1,20 @@
+{
+	"blindroll": false,
+	"description": "\u003cp\u003e\u003cspan style=\"color: #191813;\"\u003eAny time a fighter wishes (and has sufficient money), they can build a castle or stronghold and control the surrounding lands.\u003c/span\u003e\u003c/p\u003e",
+	"name": "Stronghold",
+	"pattern": "white",
+	"requirements": "Fighter",
+	"roll": "",
+	"rollTarget": 0,
+	"rollType": "result",
+	"save": "",
+	"vtt_meta": {
+		"Flags": {},
+		"ID": "IJp7jN63c61CEZzQ",
+		"Img": "/systems/ose/assets/default/ability.png",
+		"Permission": {
+			"Default": 0
+		},
+		"Type": "ability"
+	}
+}

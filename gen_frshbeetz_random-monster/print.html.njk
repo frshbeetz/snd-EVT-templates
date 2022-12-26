@@ -1,0 +1,30 @@
+
+<style>
+  * {font-family:sans-serif;}
+  h1, h2, h3, h4, h5, h6 {margin:0 0 0 0;}
+  hr {border-top:5px solid;}
+</style>
+
+<html>
+  <div style="margin-left:auto;margin-right:auto;"><center><img src="{{ images['monster.png'] }}" alt="" style="max-width:50%"/></center></div>  
+<br>
+<br>
+<br>
+<div>
+<center><span style="font-size:150%"><h1 id="monsternumber"></h1></span></center>
+<br>
+<hr>
+<span style="font-size:150%"><h5 id="description"></h5></span>
+<br>
+<br>
+<br>
+</html>
+  
+<script>
+
+  var monstercount = entries.length;
+  const monsternumber = Math.floor(Math.random() * monstercount);
+  document.getElementById("monsternumber").textContent = entries[monsternumber].name
+  document.getElementById("description").innerHTML = entries[monsternumber].data.details.biography
+
+</script>
