@@ -1,0 +1,10 @@
+{
+	"name": "101 Encounters",
+	"slug": "encounters",
+	"author": "frshbeetz",
+	"description": "",
+	"dataSources": [
+		"ds:frshbeetz+random-encounters"
+	],
+	"images": {}
+}

@@ -29,7 +29,7 @@
 <script>
 
   var itemcount = entries.length;
-  const itemnumber = Math.floor(Math.random() * itemcount);
+  const itemnumber = Math.floor(random() * itemcount);
   document.getElementById("itemnumber").textContent = entries[itemnumber].name
   document.getElementById("description").innerHTML = entries[itemnumber].data.description
 

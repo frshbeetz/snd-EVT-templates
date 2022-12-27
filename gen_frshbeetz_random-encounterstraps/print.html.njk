@@ -17,16 +17,20 @@
 
 <html>
 <div id="card">
+
   <br>
+  <div style="margin-left:auto;margin-right:auto;"><center><img src="{{ images['encounter.png'] }}" alt="" style="max-width:25%"/></center></div>  
+
   <div id="inner">
-    <div style="margin-left:auto;margin-right:auto;"><center><img src="{{ images['misc.png'] }}" alt="" style="max-width:25%"/></center></div>  
     <br>
     <div>
-      <center><span style="font-size:100%"><h2 id="itemnumber"></h2></span></center>
+      <center><span><h2 id="itemnumber"></h2></span></center>
       <br>
       <hr>
       <span style="font-size:145%"><h5 id="description"></h5></span>
       <br>
+<span style="font-size:70%"><h5 id="disclaimer"></h5></span>
+
       <br>
       <br>
     </div>
@@ -37,8 +41,11 @@
 
   var itemcount = entries.length;
   const itemnumber = Math.floor(random() * itemcount);
-  document.getElementById("itemnumber").textContent = entries[itemnumber].name
-  document.getElementById("description").innerHTML = entries[itemnumber].data.description
+  
+  document.getElementById("itemnumber").textContent = entries[itemnumber].data.Type
+  document.getElementById("disclaimer").textContent = entries[itemnumber].data.Disclaimer
+
+  document.getElementById("description").innerHTML = entries[itemnumber].data.Description
 
 </script>
 
